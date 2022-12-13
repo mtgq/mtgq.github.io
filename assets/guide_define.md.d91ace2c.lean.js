@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,a as p}from"./app.68e8bcde.js";const C=JSON.parse('{"title":"\u9879\u76EE\u4E2D\u5B9A\u4E49\u5E38\u91CF","description":"","frontmatter":{},"headers":[],"relativePath":"guide/define.md"}'),l={name:"guide/define.md"},e=p("",5),o=[e];function t(c,r,D,i,y,F){return n(),a("div",null,o)}const A=s(l,[["render",t]]);export{C as __pageData,A as default};
