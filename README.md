@@ -2,7 +2,6 @@
 
 ## 首次下载
 
-
 ```sh
 yarn install
 ```

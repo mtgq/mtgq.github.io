@@ -5,7 +5,7 @@ mysql8.0以前的版本可以使用grant在授权的时候隐式的创建用户�
 
 ## 配置单个数据库
 
-1、打开iptables 3306端口
+1、打开 iptables 3306 端口
 
 ```sh
 centos
