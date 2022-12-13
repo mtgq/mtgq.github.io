@@ -1,0 +1,10 @@
+import{_ as s,c as n,o as a,a as e}from"./app.63b193be.js";const g=JSON.parse('{"title":"EditorConfig \u6587\u4EF6\u683C\u5F0F","description":"","frontmatter":{},"headers":[],"relativePath":"guide/editorconfig.md"}'),o={name:"guide/editorconfig.md"},t=e(`<h1 id="editorconfig-\u6587\u4EF6\u683C\u5F0F" tabindex="-1">EditorConfig \u6587\u4EF6\u683C\u5F0F <a class="header-anchor" href="#editorconfig-\u6587\u4EF6\u683C\u5F0F" aria-hidden="true">#</a></h1><div class="info custom-block"><p class="custom-block-title">INFO</p><p>EditorConfig \u662F\u4E00\u5957\u7528\u4E8E\u7EDF\u4E00\u4EE3\u7801\u683C\u5F0F\u7684\u89E3\u51B3\u65B9\u6848</p></div><p><a href="https://editorconfig.org" target="_blank" rel="noreferrer">\u5B98\u7F51\u94FE\u63A5</a></p><p><a href="http://www.alloyteam.com/2014/12/editor-config" target="_blank" rel="noreferrer">\u4E2D\u6587\u53C2\u8003</a></p><p>\u914D\u7F6E\u6587\u4EF6\u4E3A <code>.editorconfig</code> \uFF0C\u901A\u5E38\u60C5\u51B5\u4E0B\u65E0\u9700\u505A\u4EFB\u4F55\u4FEE\u6539\u3002</p><div class="language-sh"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre class="shiki"><code><span class="line"><span style="color:#A6ACCD;">root = </span><span style="color:#82AAFF;">true</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">[*]</span></span>
+<span class="line"><span style="color:#A6ACCD;">charset = utf-8</span></span>
+<span class="line"><span style="color:#A6ACCD;">indent_style = space</span></span>
+<span class="line"><span style="color:#A6ACCD;">indent_size = 4</span></span>
+<span class="line"><span style="color:#A6ACCD;">end_of_line = lf</span></span>
+<span class="line"><span style="color:#A6ACCD;">insert_final_newline = </span><span style="color:#82AAFF;">true</span></span>
+<span class="line"><span style="color:#A6ACCD;">trim_trailing_whitespace = </span><span style="color:#82AAFF;">true</span></span>
+<span class="line"></span></code></pre></div>`,6),l=[t];function p(r,i,c,d,_,f){return a(),n("div",null,l)}const C=s(o,[["render",p]]);export{g as __pageData,C as default};
