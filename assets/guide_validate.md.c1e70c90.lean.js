@@ -1,1 +1,0 @@
-import{_ as s,c as n,o as a,a as p}from"./app.63b193be.js";const E=JSON.parse('{"title":"\u5E38\u7528\u9A8C\u8BC1\u7C7B\u6536\u96C6","description":"","frontmatter":{},"headers":[],"relativePath":"guide/validate.md"}'),l={name:"guide/validate.md"},o=p("",3),e=[o];function t(r,c,D,F,y,C){return a(),n("div",null,e)}const i=s(l,[["render",t]]);export{E as __pageData,i as default};
