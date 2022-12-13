@@ -10,9 +10,6 @@ hero:
     - theme: brand
       text: 开始
       link: /guide/started
-    - theme: alt
-      text: 在 GitHub 中进行编辑
-      link: https://github.com/mtgq/mtgq-doc
 
 features:
   - icon: ⚡️
