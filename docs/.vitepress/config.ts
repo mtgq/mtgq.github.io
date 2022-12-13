@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-    lang: 'en-US',
+    lang: 'zh-CN',
     title: '人在郑途，遇见未来',
     description: 'Vite & Vue powered static site generator.',
 
@@ -39,11 +39,11 @@ function nav() {
                     link: '/guide/started'
                 },
                 {
-                    text: 'uniapp',
+                    text: 'uni-app',
                     link: '/uniapp/css'
                 },
                 {
-                    text: 'php',
+                    text: 'PHP',
                     link: '/php/started'
                 }
                 ,
