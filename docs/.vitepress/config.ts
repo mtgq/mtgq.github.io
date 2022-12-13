@@ -45,8 +45,11 @@ function nav() {
                 {
                     text: 'PHP',
                     link: '/php/started'
-                }
-                ,
+                },
+                {
+                    text: 'Linux',
+                    link: '/linux/started'
+                },
                 {
                     text: 'MySQL',
                     link: '/mysql/how-to-configure-mysql-remote-connection'
