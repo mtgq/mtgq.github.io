@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as s,a as n}from"./app.27b9d165.js";const u=JSON.parse('{"title":"uni-app 发布 h5 端","description":"","frontmatter":{},"headers":[],"relativePath":"php/uniapp.md"}'),o={name:"php/uniapp.md"},p=n("",20),c=[p];function d(t,i,l,h,r,C){return s(),a("div",null,c)}const _=e(o,[["render",d]]);export{u as __pageData,_ as default};

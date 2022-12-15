@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as o}from"./app.27b9d165.js";const u=JSON.parse('{"title":"Visual Studio Code 使用","description":"","frontmatter":{},"headers":[],"relativePath":"tools/started.md"}'),l={name:"tools/started.md"},p=o("",28),e=[p];function t(c,r,D,F,y,C){return a(),n("div",null,e)}const A=s(l,[["render",t]]);export{u as __pageData,A as default};
