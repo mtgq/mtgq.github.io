@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
     lang: 'zh-CN',
-    title: '人在郑途，遇见未来',
+    title: '知识库',
     description: 'Vite & Vue powered static site generator.',
 
     cleanUrls: 'without-subfolders',
