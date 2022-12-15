@@ -31,7 +31,7 @@ function nav() {
             text: '代码知识库',
             items: [
                 {
-                    text: '工具',
+                    text: '工具1',
                     link: '/tools/started'
                 },
                 {
