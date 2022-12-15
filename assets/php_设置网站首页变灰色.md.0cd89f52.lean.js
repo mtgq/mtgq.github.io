@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as n,a as l}from"./app.27b9d165.js";const A=JSON.parse('{"title":"设置网站首页变灰色","description":"","frontmatter":{},"headers":[],"relativePath":"php/设置网站首页变灰色.md"}'),p={name:"php/设置网站首页变灰色.md"},o=l("",5),e=[o];function c(t,r,F,y,D,C){return n(),a("div",null,e)}const d=s(p,[["render",c]]);export{A as __pageData,d as default};

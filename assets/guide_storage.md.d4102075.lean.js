@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as n,a as l}from"./app.27b9d165.js";const i=JSON.parse('{"title":"vue 项目封装 storage","description":"","frontmatter":{},"headers":[],"relativePath":"guide/storage.md"}'),p={name:"guide/storage.md"},o=l("",9),e=[o];function t(c,r,D,y,F,A){return n(),a("div",null,e)}const g=s(p,[["render",t]]);export{i as __pageData,g as default};

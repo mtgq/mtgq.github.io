@@ -1,1 +1,0 @@
-import{_ as a,c as s,o as e,a as t}from"./app.27b9d165.js";const m=JSON.parse('{"title":"linux 基本设置","description":"","frontmatter":{},"headers":[],"relativePath":"linux/started.md"}'),n={name:"linux/started.md"},o=t("",3),r=[o];function c(l,p,i,d,_,h){return e(),s("div",null,r)}const D=a(n,[["render",c]]);export{m as __pageData,D as default};

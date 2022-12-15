@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as n,a as e}from"./app.27b9d165.js";const C=JSON.parse('{"title":"linux 国内镜像源列表","description":"","frontmatter":{},"headers":[],"relativePath":"linux/cn.md"}'),t={name:"linux/cn.md"},c=e("",5),o=[c];function l(r,i,p,d,h,u){return n(),a("div",null,o)}const m=s(t,[["render",l]]);export{C as __pageData,m as default};
