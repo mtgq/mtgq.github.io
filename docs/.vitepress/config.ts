@@ -21,6 +21,8 @@ export default defineConfig({
             '/guide/': sidebarGuide(),
             '/uniapp/': sidebarUniapp(),
             '/php/': sidebarPhp(),
+            '/linux/': sidebarLinux(),
+            '/mysql/': sidebarMysql(),
             '/about/': sidebarAbout(),
         },
     }
@@ -138,6 +140,30 @@ function sidebarPhp(){
             collapsible: true,
             items: [
                 { text: 'uniapp发布h5端', link: '/php/uniapp' },
+            ]
+        }
+    ]
+}
+
+function sidebarLinux(){
+    return [
+        {
+            text: 'Linux',
+            collapsible: true,
+            items: [
+                { text: '配置国内镜像源', link: '/linux/started' },
+            ]
+        }
+    ]
+}
+
+function sidebarMysql(){
+    return [
+        {
+            text: 'MySQL',
+            collapsible: true,
+            items: [
+                { text: '配置远程连接', link: '/mysql/how-to-configure-mysql-remote-connection' },
             ]
         }
     ]
