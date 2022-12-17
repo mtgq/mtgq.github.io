@@ -1,0 +1,1 @@
+import{_ as a,c as n,o as s,d as e}from"./app.d114dc0a.js";const m=JSON.parse('{"title":"yarn 安装","description":"","frontmatter":{},"headers":[],"relativePath":"guide/yarn-install.md"}'),t={name:"guide/yarn-install.md"},r=e("",5),o=[r];function p(c,l,i,d,y,h){return s(),n("div",null,o)}const g=a(t,[["render",p]]);export{m as __pageData,g as default};
