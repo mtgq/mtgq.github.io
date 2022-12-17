@@ -21,6 +21,7 @@ export default defineConfig({
             '/guide/': sidebarGuide(),
             '/uniapp/': sidebarUniapp(),
             '/php/': sidebarPhp(),
+            '/about/': sidebarAbout(),
         },
     }
 })
@@ -31,15 +32,15 @@ function nav() {
             text: '代码知识库',
             items: [
                 {
-                    text: '工具1',
+                    text: 'Toos',
                     link: '/tools/started'
                 },
                 {
-                    text: 'web',
+                    text: 'Web',
                     link: '/guide/started'
                 },
                 {
-                    text: 'uni-app',
+                    text: 'Uni-app',
                     link: '/uniapp/css'
                 },
                 {
@@ -53,6 +54,10 @@ function nav() {
                 {
                     text: 'MySQL',
                     link: '/mysql/how-to-configure-mysql-remote-connection'
+                },
+                {
+                    text: 'About',
+                    link: '/about/me'
                 }
             ]
         }
@@ -65,7 +70,8 @@ function sidebarTools() {
             text: '工具',
             collapsible: true,
             items: [
-                { text: 'vscode使用', link: '/tools/started' },
+                { text: 'VSCode如何便携', link: '/tools/started' },
+                { text: 'VSCode配置', link: '/tools/vscode-setting' },
             ]
         }
     ]
@@ -77,7 +83,7 @@ function sidebarGuide() {
             text: '指引',
             collapsible: true,
             items: [
-                { text: '文档说明', link: '/guide/started' },
+                { text: '文档部署', link: '/guide/started' },
             ]
         },
         {
@@ -132,6 +138,19 @@ function sidebarPhp(){
             collapsible: true,
             items: [
                 { text: 'uniapp发布h5端', link: '/php/uniapp' },
+            ]
+        }
+    ]
+}
+
+function sidebarAbout(){
+    return [
+        {
+            text: '关于',
+            collapsible: true,
+            items: [
+                { text: '关于我', link: '/about/me' },
+                { text: '关于本文档', link: '/about/this-doc' },
             ]
         }
     ]
