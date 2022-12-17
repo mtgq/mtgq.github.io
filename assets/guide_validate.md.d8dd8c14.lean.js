@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,d as p}from"./app.d421a35c.js";const E=JSON.parse('{"title":"常用验证类收集","description":"","frontmatter":{},"headers":[],"relativePath":"guide/validate.md"}'),l={name:"guide/validate.md"},o=p("",3),e=[o];function t(r,c,D,F,y,C){return a(),n("div",null,e)}const i=s(l,[["render",t]]);export{E as __pageData,i as default};

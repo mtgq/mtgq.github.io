@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as n,a as p}from"./app.53aabdcd.js";const F=JSON.parse('{"title":"项目中定义常量","description":"","frontmatter":{},"headers":[],"relativePath":"uniapp/define.md"}'),o={name:"uniapp/define.md"},e=p("",6),l=[e];function t(c,r,D,i,y,d){return n(),a("div",null,l)}const A=s(o,[["render",t]]);export{F as __pageData,A as default};

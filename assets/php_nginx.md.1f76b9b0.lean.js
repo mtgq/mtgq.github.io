@@ -1,1 +1,0 @@
-import{_ as s,c as n,o as a,a as l}from"./app.53aabdcd.js";const y=JSON.parse('{"title":"nginx","description":"","frontmatter":{},"headers":[],"relativePath":"php/nginx.md"}'),p={name:"php/nginx.md"},e=l("",3),o=[e];function c(t,r,D,i,A,C){return a(),n("div",null,o)}const F=s(p,[["render",c]]);export{y as __pageData,F as default};
