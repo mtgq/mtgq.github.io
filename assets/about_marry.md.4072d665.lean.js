@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a,a as o}from"./app.aa018f56.js";const u=JSON.parse('{"title":"人生大事（ 结婚 ）","description":"","frontmatter":{},"headers":[],"relativePath":"about/marry.md"}'),c={name:"about/marry.md"},r=o("",5),s=[r];function _(p,d,n,i,l,m){return a(),t("div",null,s)}const f=e(c,[["render",_]]);export{u as __pageData,f as default};
