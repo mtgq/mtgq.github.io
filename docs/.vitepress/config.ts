@@ -23,7 +23,7 @@ export default defineConfig({
             '/php/': sidebarPhp(),
             '/linux/': sidebarLinux(),
             '/mysql/': sidebarMysql(),
-            '/about/': sidebarAbout(),
+            '/about/': sidebarAbout()
         },
     }
 })
@@ -56,10 +56,19 @@ function nav() {
                 {
                     text: 'MySQL',
                     link: '/mysql/how-to-configure-mysql-remote-connection'
+                }
+            ]
+        },
+        {          
+            text: '笔记',
+            items: [
+                {
+                    text: '关于',
+                    link: '/about/me'
                 },
                 {
-                    text: 'About',
-                    link: '/about/me'
+                    text: '婚礼',
+                    link: '/about/marry'
                 }
             ]
         }
@@ -177,6 +186,13 @@ function sidebarAbout(){
             items: [
                 { text: '关于我', link: '/about/me' },
                 { text: '关于本文档', link: '/about/this-doc' },
+            ]
+        },
+        {
+            text: '结婚',
+            collapsible: true,
+            items: [
+                { text: '人生大事（ 结婚 ）', link: '/about/marry' }
             ]
         }
     ]
