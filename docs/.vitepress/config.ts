@@ -84,6 +84,14 @@ function sidebarTools() {
                 { text: 'VSCode如何便携', link: '/tools/started' },
                 { text: 'VSCode配置', link: '/tools/vscode-setting' },
             ]
+        },
+        {
+            text: '浏览器',
+            collapsible: true,
+            items: [
+                { text: 'uBlock Origin 过滤规则', link: '/tools/uBlock Origin' },
+                { text: '油猴脚本', link: '/tools/Tampermonkey' }
+            ]
         }
     ]
 }
