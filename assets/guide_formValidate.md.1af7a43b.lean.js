@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,a as l}from"./app.a79d6f77.js";const i=JSON.parse('{"title":"表单验证正则类","description":"","frontmatter":{},"headers":[],"relativePath":"guide/formValidate.md"}'),p={name:"guide/formValidate.md"},o=l("",8),e=[o];function D(c,t,r,F,y,C){return n(),a("div",null,e)}const E=s(p,[["render",D]]);export{i as __pageData,E as default};
