@@ -1,1 +1,0 @@
-import{_ as s,c as n,o as a,a as e}from"./app.a79d6f77.js";const u=JSON.parse('{"title":"ESLint 配置","description":"","frontmatter":{},"headers":[],"relativePath":"guide/eslint.md"}'),o={name:"guide/eslint.md"},l=e("",5),t=[l];function p(r,c,i,D,d,y){return a(),n("div",null,t)}const _=s(o,[["render",p]]);export{u as __pageData,_ as default};

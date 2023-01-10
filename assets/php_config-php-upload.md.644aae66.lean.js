@@ -1,0 +1,1 @@
+import{_ as a,c as s,o as n,a as e}from"./app.7cbb71e4.js";const A=JSON.parse('{"title":"上传大文件","description":"","frontmatter":{},"headers":[],"relativePath":"php/config-php-upload.md"}'),p={name:"php/config-php-upload.md"},o=e("",9),c=[o];function l(t,i,d,r,h,_){return n(),s("div",null,c)}const u=a(p,[["render",l]]);export{A as __pageData,u as default};
