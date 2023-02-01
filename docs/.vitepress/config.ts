@@ -157,6 +157,9 @@ function sidebarPhp(){
             collapsible: true,
             items: [
                 { text: 'uniapp发布h5端', link: '/php/uniapp' },
+                { text: '配置环境上传大文件', link: '/php/config-php-upload' },
+                { text: '设置网站首页变灰色', link: '/php/设置网站首页变灰色' },
+                { text: '部署二级网站', link: '/php/nginx' },
             ]
         }
     ]
