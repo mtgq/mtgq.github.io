@@ -15,10 +15,9 @@ sudo apt-get -y install ca-certificates curl gnupg lsb-release
 
 ### 2、添加 Docker 的官方 GPG 密钥
 
-```sh
-sudo mkdir -m 0755 -p /etc/apt/keyrings
-curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-```
+`sudo mkdir -m 0755 -p /etc/apt/keyrings`
+
+`curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg`
 
 ### 3、设置存储库
 ```sh
