@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as l}from"./app.b55333cf.js";const i=JSON.parse('{"title":"封装 Cache","description":"","frontmatter":{},"headers":[],"relativePath":"uniapp/cache.md"}'),p={name:"uniapp/cache.md"},o=l("",7),t=[o];function e(c,F,r,y,D,A){return a(),n("div",null,t)}const h=s(p,[["render",e]]);export{i as __pageData,h as default};

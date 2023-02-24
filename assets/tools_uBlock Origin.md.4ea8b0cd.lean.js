@@ -1,1 +1,0 @@
-import{_ as t,c as e,o as r,a}from"./app.7cbb71e4.js";const m=JSON.parse('{"title":"uBlock Origin 过滤规则","description":"","frontmatter":{},"headers":[],"relativePath":"tools/uBlock Origin.md"}'),o={name:"tools/uBlock Origin.md"},n=a("",11),i=[n];function s(c,l,h,u,p,d){return r(),e("div",null,i)}const _=t(o,[["render",s]]);export{m as __pageData,_ as default};
