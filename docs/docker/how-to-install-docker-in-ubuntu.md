@@ -34,7 +34,7 @@ echo \
 
 ### 2、安装 Docker Engine、containerd 和 Docker Compose
 
-`sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
+`sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
 
 ### 3、安装校验
 
