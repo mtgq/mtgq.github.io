@@ -56,6 +56,10 @@ function nav() {
                 {
                     text: 'MySQL',
                     link: '/mysql/how-to-configure-mysql-remote-connection'
+                },
+                {
+                    text: 'Docker',
+                    link: '/docker/how-to-install'
                 }
             ]
         },
@@ -172,6 +176,8 @@ function sidebarLinux(){
             collapsible: true,
             items: [
                 { text: '配置国内镜像源', link: '/linux/started' },
+                { text: '国内镜像源大全', link: '/linux/mirrors' },
+                { text: 'docker 常用命令', link: '/linux/mingling' },
             ]
         }
     ]
