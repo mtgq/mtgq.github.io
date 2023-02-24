@@ -23,7 +23,8 @@ export default defineConfig({
             '/php/': sidebarPhp(),
             '/linux/': sidebarLinux(),
             '/mysql/': sidebarMysql(),
-            '/about/': sidebarAbout()
+            '/about/': sidebarAbout(),
+            '/docker/': sidebarDocker()
         },
     }
 })
@@ -59,7 +60,7 @@ function nav() {
                 },
                 {
                     text: 'Docker',
-                    link: '/docker/how-to-install'
+                    link: '/docker/how-to-install-docker-in-ubuntu'
                 }
             ]
         },
@@ -176,8 +177,7 @@ function sidebarLinux(){
             collapsible: true,
             items: [
                 { text: '配置国内镜像源', link: '/linux/started' },
-                { text: '国内镜像源大全', link: '/linux/mirrors' },
-                { text: 'docker 常用命令', link: '/linux/mingling' },
+                { text: '国内镜像源大全', link: '/linux/mirrors' }
             ]
         }
     ]
@@ -190,6 +190,19 @@ function sidebarMysql(){
             collapsible: true,
             items: [
                 { text: '配置远程连接', link: '/mysql/how-to-configure-mysql-remote-connection' },
+            ]
+        }
+    ]
+}
+
+function sidebarDocker() {
+    return [
+        {
+            text: 'docker',
+            collapsible: true,
+            items: [
+                { text: 'ubuntu 安装 docker', link: '/docker/how-to-install-docker-in-ubuntu' },
+                { text: 'docker 常用命令', link: '/docker/mingling' }
             ]
         }
     ]
