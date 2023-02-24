@@ -1,0 +1,1 @@
+import{_ as e,c as r,o as a,a as t}from"./app.225ec4b8.js";const l=JSON.parse('{"title":"油猴脚本","description":"","frontmatter":{},"headers":[],"relativePath":"tools/Tampermonkey.md"}'),o={name:"tools/Tampermonkey.md"},n=t("",6),s=[n];function c(E,h,B,d,i,p){return a(),r("div",null,s)}const A=e(o,[["render",c]]);export{l as __pageData,A as default};
