@@ -65,7 +65,7 @@ function nav() {
                 },
                 {
                     text: 'WSL',
-                    link: '/wsl/how-to-open-systemd-in-wsl'
+                    link: '/wsl/basic-commands'
                 }
             ]
         },
