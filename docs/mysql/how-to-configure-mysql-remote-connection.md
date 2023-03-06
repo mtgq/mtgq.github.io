@@ -58,8 +58,8 @@ db_pass: 密码
 ### MySQL 8.0 版本
 
 ```sh 
-CREATE USER 'root'@'%' IDENTIFIED BY '123456' PASSWORD EXPIRE NEVER;
-grant all privileges on *.* to 'root'@'%';
+CREATE USER 'root'@'%' IDENTIFIED BY '123456' PASSWORD EXPIRE NEVER;  -- 这一步执行失败没关系
+grant all privileges on *.* to 'root'@'%';  --赋予root用户权限
 
 如果远程连接的时候报 plugin caching_sha2_password could not be loaded 这个错误，可以尝试修改密码加密插件：
 ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '123456';
@@ -93,5 +93,5 @@ x.x.x.x 允许从指定的 ip 访问
 ## 验证是否配置成功
 ```
 use mysql;
-select host, user, authentication_string, plugin from user
+select host,user,authentication_string,plugin from user;
 ```

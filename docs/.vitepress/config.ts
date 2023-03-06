@@ -25,7 +25,8 @@ export default defineConfig({
             '/mysql/': sidebarMysql(),
             '/about/': sidebarAbout(),
             '/docker/': sidebarDocker(),
-            '/wsl/': sidebarWsl()
+            '/wsl/': sidebarWsl(),
+            '/browser/': sidebarBrowser()
         }
     }
 })
@@ -245,6 +246,18 @@ function sidebarAbout() {
             collapsible: true,
             items: [
                 { text: '人生大事（ 结婚 ）', link: '/about/marry' }
+            ]
+        }
+    ]
+}
+
+function sidebarBrowser() {
+    return [
+        {
+            text: '浏览器相关',
+            collapsible: true,
+            items: [
+                { text: '自用油猴脚本', link: '/browser/自用油猴脚本' }
             ]
         }
     ]
