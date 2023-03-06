@@ -66,6 +66,10 @@ function nav() {
                 {
                     text: 'WSL',
                     link: '/wsl/basic-commands'
+                },
+                {
+                    text: '浏览器',
+                    link: '/browser/自用油猴脚本'
                 }
             ]
         },
