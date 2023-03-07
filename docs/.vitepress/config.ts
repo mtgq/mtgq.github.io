@@ -129,7 +129,7 @@ function sidebarGuide() {
                 { text: '常用验证类收集', link: '/guide/validate' },
                 { text: '表单验证正则类', link: '/guide/formValidate' },
                 { text: 'eslint配置', link: '/guide/eslint' },
-                { text: '向数据添加元素', link: '/guide/array_add_item' }
+                { text: '向数组添加元素', link: '/guide/array_add_item' }
             ]
         },
         {

@@ -1,4 +1,4 @@
-# 向数据添加元素
+# 向数组添加元素
 
 ```js
 let images = [{ src: 'img.png' }, { src: 'j1.json' }, { src: 'img.png' }, { src: 'j2.json' }];
