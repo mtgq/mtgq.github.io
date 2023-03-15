@@ -189,6 +189,13 @@ function sidebarLinux() {
                 { text: '配置国内镜像源', link: '/linux/set-mirror-cn' },
                 { text: 'Systemd 入门命令', link: '/linux/systemd-tutorial-commands' }
             ]
+        } ,
+        {
+            text: 'nginx',
+            collapsible: true,
+            items: [
+                { text: 'nginx单个网站配置', link: '/linux/nginx-site-conf' }
+            ]
         }
     ]
 }
