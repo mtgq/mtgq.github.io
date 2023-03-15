@@ -12,12 +12,13 @@ server
     index index.php index.html index.htm default.php default.htm default.html;
     root /www/wwwroot/test.com;
 
-    # 配置反向代理
+    # 部署 vue 项目需要
     location / {
         try_files $uri $uri/ /index.html;
         index  index.html index.htm;
     }
     
+    # 配置反向代理
     location /prod-api/ {
         proxy_set_header Host $http_host;
         proxy_set_header X-Real-IP $remote_addr;
