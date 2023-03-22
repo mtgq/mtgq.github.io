@@ -1,5 +1,9 @@
 # Visual Studio Code 基本配置
 
+## 快捷键
+
+[中文版快捷键参考](https://www.bysb.net/wp-content/uploads/2020/05/vsc-sc-zh-hans.png)
+
 ## 扩展推荐
 
 `语言包`

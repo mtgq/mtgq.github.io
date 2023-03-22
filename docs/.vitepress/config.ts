@@ -53,7 +53,7 @@ function nav() {
                     link: '/php/started'
                 },
                 {
-                    text: 'Tools',
+                    text: '工具',
                     link: '/tools/started'
                 },
                 {
@@ -98,14 +98,6 @@ function sidebarTools() {
             items: [
                 { text: 'VSCode如何便携', link: '/tools/started' },
                 { text: 'VSCode配置', link: '/tools/vscode-setting' }
-            ]
-        },
-        {
-            text: '浏览器',
-            collapsible: true,
-            items: [
-                { text: 'uBlock Origin 过滤规则', link: '/tools/uBlock Origin' },
-                { text: '油猴脚本', link: '/tools/Tampermonkey' }
             ]
         }
     ]
@@ -264,7 +256,8 @@ function sidebarBrowser() {
             text: '浏览器相关',
             collapsible: true,
             items: [
-                { text: '自用油猴脚本', link: '/browser/自用油猴脚本' }
+                { text: '自用油猴脚本', link: '/browser/自用油猴脚本' },
+                { text: 'uBlock Origin 过滤规则', link: '/browser/uBlock-origin' },
             ]
         }
     ]
