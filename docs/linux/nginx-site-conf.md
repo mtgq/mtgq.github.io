@@ -29,6 +29,7 @@ server
 
     # 配置二级目录
     location /h5/ {
+        index index.html;
         try_files $uri /h5/index.html;
     }
 
