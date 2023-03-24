@@ -179,7 +179,8 @@ function sidebarLinux() {
             collapsible: true,
             items: [
                 { text: '配置国内镜像源', link: '/linux/set-mirror-cn' },
-                { text: 'Systemd 入门命令', link: '/linux/systemd-tutorial-commands' }
+                { text: 'Systemd 入门命令', link: '/linux/systemd-tutorial-commands' },
+                { text: '防火墙使用', link: '/linux/fanghuoqiang' }
             ]
         } ,
         {
