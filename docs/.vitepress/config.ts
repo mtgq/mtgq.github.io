@@ -26,13 +26,23 @@ export default defineConfig({
             '/about/': sidebarAbout(),
             '/docker/': sidebarDocker(),
             '/wsl/': sidebarWsl(),
-            '/browser/': sidebarBrowser()
+            '/browser/': sidebarBrowser(),
+            '/book/': sidebarBook()
         }
     }
 })
 
 function nav() {
     return [
+        {
+            text: '手册大全',
+            items: [
+                {
+                    text: '手册大全',
+                    link: '/book/book-php',
+                }
+            ]
+        },
         {
             text: '代码知识库',
             items: [
@@ -82,7 +92,7 @@ function nav() {
                 link: '/java/java-started'
               }
             ]
-          }
+        },
         {
             text: '笔记',
             items: [
@@ -98,6 +108,20 @@ function nav() {
         }
     ]
 }
+
+function sidebarBook() {
+    return [
+      {
+        text: '编程手册大全',
+        items: [
+          { text: 'php', link: '/book/book-php' },
+          { text: 'vue', link: '/book/book-vue' },
+          { text: 'Runtime API', link: '/reference/runtime-api' },
+          { text: 'CLI', link: '/reference/cli' },
+        ]
+      }
+    ]
+  }
 
 function sidebarTools() {
     return [
