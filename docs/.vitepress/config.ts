@@ -38,7 +38,7 @@ function nav() {
             text: '手册大全',
             items: [
                 {
-                    text: '手册大全',
+                    text: '完全开发手册',
                     link: '/book/book-php',
                 }
             ]
@@ -115,9 +115,7 @@ function sidebarBook() {
         text: '编程手册大全',
         items: [
           { text: 'php', link: '/book/book-php' },
-          { text: 'vue', link: '/book/book-vue' },
-          { text: 'Runtime API', link: '/reference/runtime-api' },
-          { text: 'CLI', link: '/reference/cli' },
+          { text: 'vue', link: '/book/book-vue' }
         ]
       }
     ]
