@@ -37,35 +37,31 @@ function nav() {
             text: '代码知识库',
             items: [
                 {
-                    text: 'Docker',
+                    text: 'docker',
                     link: '/docker/how-to-install-docker-in-ubuntu'
                 },
                 {
-                    text: 'Linux',
+                    text: 'linux',
                     link: '/linux/set-mirror-cn'
                 },
                 {
-                    text: 'MySQL',
+                    text: 'mysql',
                     link: '/mysql/how-to-configure-mysql-remote-connection'
-                },
-                {
-                    text: 'PHP',
-                    link: '/php/started'
                 },
                 {
                     text: '工具',
                     link: '/tools/started'
                 },
                 {
-                    text: 'Web',
+                    text: 'web',
                     link: '/guide/started'
                 },
                 {
-                    text: 'Uni-app',
+                    text: 'uni-app',
                     link: '/uniapp/css'
                 },
                 {
-                    text: 'WSL',
+                    text: 'wsl',
                     link: '/wsl/basic-commands'
                 },
                 {
@@ -74,6 +70,19 @@ function nav() {
                 }
             ]
         },
+        {
+            text: '编程语言',
+            items: [
+                {
+                    text: 'php',
+                    link: '/php/started'
+                },
+              {
+                text: 'java',
+                link: '/java/java-started'
+              }
+            ]
+          }
         {
             text: '笔记',
             items: [
@@ -163,6 +172,7 @@ function sidebarPhp() {
             text: 'php',
             collapsible: true,
             items: [
+                { text: 'eq-ge都是什么意思', link: '/php/eq-and-ge' },
                 { text: 'uniapp发布h5端', link: '/php/uniapp' },
                 { text: '配置环境上传大文件', link: '/php/config-php-upload' },
                 { text: '设置网站首页变灰色', link: '/php/设置网站首页变灰色' },
@@ -178,6 +188,7 @@ function sidebarLinux() {
             text: 'Linux',
             collapsible: true,
             items: [
+                { text: '单个知识点', link: '/linux/knowledge-points' },
                 { text: '配置国内镜像源', link: '/linux/set-mirror-cn' },
                 { text: 'Systemd 入门命令', link: '/linux/systemd-tutorial-commands' },
                 { text: '防火墙使用', link: '/linux/fanghuoqiang' }
