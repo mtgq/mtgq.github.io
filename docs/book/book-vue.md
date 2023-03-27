@@ -7,11 +7,12 @@
 
 ## 官方库
 
+### v3
 - vite https://cn.vitejs.dev/guide
-
 - vue-router@4 https://router.vuejs.org/zh/installation.html
 - pinia https://pinia.vuejs.org/zh/introduction.html
 
+### v2
 - vue-cli https://cli.vuejs.org/zh/guide/installation.html
 - vue-router@3 https://v3.router.vuejs.org/zh/installation.html
 - vuex https://vuex.vuejs.org/zh/
