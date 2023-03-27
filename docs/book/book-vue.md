@@ -1,11 +1,11 @@
 # vue 完全开发手册
 
-## 官方手册
+## 框架手册
 
 - v2 https://v2.cn.vuejs.org/v2/guide/
 - v3 https://cn.vuejs.org/guide/introduction.html
 
-## 官方库
+## 官方扩展库
 
 ### v3
 - vite https://cn.vitejs.dev/guide
