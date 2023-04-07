@@ -3,3 +3,5 @@
 [HBuilderX官方文档](https://hx.dcloud.net.cn/): https://hx.dcloud.net.cn/
 [uni-app官方文档](https://uniapp.dcloud.net.cn/): https://uniapp.dcloud.net.cn/
 [unicloud官方文档](https://uniapp.dcloud.net.cn/uniCloud/): https://uniapp.dcloud.net.cn/uniCloud/
+
+[插件市场地址](插件市场地址): https://ext.dcloud.net.cn/
