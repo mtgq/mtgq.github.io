@@ -115,7 +115,8 @@ function sidebarBook() {
         text: '编程手册大全',
         items: [
           { text: 'php', link: '/book/book-php' },
-          { text: 'vue', link: '/book/book-vue' }
+          { text: 'vue', link: '/book/book-vue' },
+          { text: 'uniapp', link: '/book/book-uniapp' },
         ]
       }
     ]
