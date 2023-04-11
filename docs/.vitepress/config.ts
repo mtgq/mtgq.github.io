@@ -112,11 +112,17 @@ function nav() {
 function sidebarBook() {
     return [
       {
-        text: '编程手册大全',
+        text: '编程语言手册大全',
         items: [
           { text: 'php', link: '/book/book-php' },
           { text: 'vue', link: '/book/book-vue' },
           { text: 'uniapp', link: '/book/book-uniapp' },
+        ]
+      },
+      {
+        text: '开发工具手册大全',
+        items: [
+          { text: 'dev-tools', link: '/book/book-development-tool' }
         ]
       }
     ]
@@ -233,7 +239,9 @@ function sidebarMysql() {
             text: 'MySQL',
             collapsible: true,
             items: [
-                { text: '配置远程连接', link: '/mysql/how-to-configure-mysql-remote-connection' }
+                { text: '配置远程连接', link: '/mysql/how-to-configure-mysql-remote-connection' },
+                { text: 'mysqldump使用', link: '/mysql/how-to-use-mysqldump' },
+                { text: 'sql_mode区别', link: '/mysql/sql_mode-diff' }
             ]
         }
     ]
