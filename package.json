@@ -6,7 +6,7 @@
   "author": "mtgq <2580839896@qq.com>",
   "license": "MIT",
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.47",
+    "vitepress": "^1.0.0-alpha.71",
     "vue": "^3.2.47"
   },
   "scripts": {
