@@ -38,9 +38,22 @@ function nav() {
             text: '手册大全',
             items: [
                 {
-                    text: '完全开发手册',
+                    text: 'php',
                     link: '/book/book-php',
-                }
+                },
+                {
+                    text: 'vue',
+                    link: '/book/book-vue',
+                },
+                {
+                    text: 'uniapp',
+                    link: '/book/book-uniapp',
+                },
+                {
+                    text: 'java',
+                    link: '/book/book-java',
+                },
+                
             ]
         },
         {
