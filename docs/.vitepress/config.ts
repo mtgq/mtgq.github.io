@@ -35,7 +35,7 @@ export default defineConfig({
 function nav() {
     return [
         {
-            text: '手册大全',
+            text: '开发手册',
             items: [
                 {
                     text: 'php',
@@ -125,7 +125,7 @@ function nav() {
 function sidebarBook() {
     return [
       {
-        text: '编程语言手册大全',
+        text: '编程语言手册',
         items: [
           { text: 'php', link: '/book/book-php' },
           { text: 'vue', link: '/book/book-vue' },
@@ -133,7 +133,7 @@ function sidebarBook() {
         ]
       },
       {
-        text: '开发工具手册大全',
+        text: '开发工具手册',
         items: [
           { text: 'dev-tools', link: '/book/book-development-tool' }
         ]
