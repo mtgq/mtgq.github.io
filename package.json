@@ -1,17 +1,10 @@
 {
-  "name": "mtgq-doc",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/mtgq/mtgq-doc.git",
-  "author": "mtgq <2580839896@qq.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "vitepress": "^1.0.0-alpha.71",
-    "vue": "^3.2.47"
-  },
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.73"
   }
 }
