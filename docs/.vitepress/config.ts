@@ -94,15 +94,21 @@ function nav() {
             ]
         },
         {
-            text: '编程语言',
+            text: '前端',
+            items: [
+              { text: 'Item A', link: 'frontend/item-1' },
+            ]
+        },
+        {
+            text: '后端',
             items: [
                 {
                     text: 'php',
-                    link: '/php/started'
+                    link: '/backend/php/started'
                 },
               {
                 text: 'java',
-                link: '/java/java-started'
+                link: '/backend/java/java-started'
               }
             ]
         },
