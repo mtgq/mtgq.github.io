@@ -84,10 +84,6 @@ function nav() {
                     link: '/tools/started'
                 },
                 {
-                    text: 'uni-app',
-                    link: '/uniapp/css'
-                },
-                {
                     text: 'wsl',
                     link: '/wsl/basic-commands'
                 },
@@ -127,6 +123,10 @@ function nav() {
                 {
                     text: 'nginx',
                     link: '/server/nginx'
+                },
+                {
+                    text: 'apache',
+                    link: '/server/apache'
                 },
                 {
                     text: 'docker',
