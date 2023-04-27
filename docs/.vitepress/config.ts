@@ -58,6 +58,10 @@ function nav() {
                     link: '/book/book-php',
                 },
                 {
+                    text: 'web',
+                    link: '/book/book-web',
+                },
+                {
                     text: 'vue',
                     link: '/book/book-vue',
                 },
@@ -69,7 +73,10 @@ function nav() {
                     text: 'java',
                     link: '/book/book-java',
                 },
-
+                {
+                    text: '编辑器',
+                    link: '/book/book-development-tool',
+                },
             ]
         },
         {
@@ -156,14 +163,16 @@ function sidebarBook() {
             text: '编程语言手册',
             items: [
                 {text: 'php', link: '/book/book-php'},
+                {text: 'web', link: '/book/book-web'},
                 {text: 'vue', link: '/book/book-vue'},
                 {text: 'uniapp', link: '/book/book-uniapp'},
+                {text: 'java', link: '/book/book-java',}
             ]
         },
         {
             text: '开发工具手册',
             items: [
-                {text: 'dev-tools', link: '/book/book-development-tool'}
+                {text: '编辑器', link: '/book/book-development-tool'}
             ]
         }
     ]
