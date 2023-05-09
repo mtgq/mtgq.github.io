@@ -261,8 +261,8 @@ function sidebarWsl() {
             text: 'wsl',
             collapsible: true,
             items: [
-                {text: 'wsl2 开启 Systemd', link: '/wsl/common-problem-in-wsl'},
-                {text: 'wsl2 常用命令', link: '/wsl/basic-commands'}
+                {text: 'wsl2 常用命令', link: '/wsl/basic-commands'},
+                {text: 'wsl2 开启 Systemd', link: '/wsl/common-problem-in-wsl'}
             ]
         }
     ]
