@@ -2,7 +2,7 @@ import {defineConfig} from 'vitepress'
 
 export default defineConfig({
     lang: 'zh-CN',
-    title: '铃芽之旅',
+    title: 'Powered By Suzume',
     description: 'Vite & Vue powered static site generator.',
     lastUpdated: true,
     cleanUrls: true,

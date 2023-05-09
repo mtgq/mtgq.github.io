@@ -1,11 +1,6 @@
-# wsl 常见问题 
+# Systemd support is now available in WSL
 
-::: tip
-以 wsl2 进行测试
-:::
-
-
-## WSL2 设置 Systemd
+## wsl 设置 systemd
 
 1、编辑 `/etc/wsl.conf` 文件
 ```sh
@@ -18,7 +13,7 @@ systemd=true
 3、重新进入 WSL ，输入 `systemctl list-unit-files --type=service` ，即可检验 systemd 的运行状态
 
 
-## WSL2 打开终端默认以 root 用户运行
+## wsl 打开终端默认以 root 用户运行
 
 1、只需要在 `C:\Users\用户名\AppData\Local\Microsoft\WindowsApps` 路径下确认所安装的 Linux 子系统具体的版本号
 
