@@ -33,7 +33,7 @@ export default defineConfig({
             '/book/': sidebarBook(),
             '/frontend/': sidebarFrontend(),
             '/server/': sidebarServer(),
-            '/ios/': sidebaIos(),
+            '/ios/': sidebarIos()
         },
         socialLinks: [
             {icon: 'github', link: 'https://github.com/mtgq/mtgq.github.io'},
