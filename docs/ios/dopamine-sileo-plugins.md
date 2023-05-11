@@ -27,4 +27,6 @@ Shadow 屏蔽源™：https://ios.jjolano.me/
 lenglengyu源™：http://www.lenglengyu.com/
 - 短视频助手
 
-Netskao's Private Repo：https://repo.initnil.com/
+Netskao's Private Repo(各种净化)：https://repo.initnil.com/
+
+刀刀源 (嗨客源的rootless衍生源)：https://xiangfeidexiaohuo.github.io/
