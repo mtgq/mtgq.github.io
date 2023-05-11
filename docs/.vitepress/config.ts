@@ -33,6 +33,7 @@ export default defineConfig({
             '/book/': sidebarBook(),
             '/frontend/': sidebarFrontend(),
             '/server/': sidebarServer(),
+            '/ios/': sidebaIos(),
         },
         socialLinks: [
             {icon: 'github', link: 'https://github.com/mtgq/mtgq.github.io'},
@@ -142,6 +143,15 @@ function nav() {
             ]
         },
         {
+            text: '苹果越狱',
+            items: [
+                {
+                    text: '多巴胺越狱插件推荐',
+                    link: '/ios/dopamine-sileo-plugins'
+                }
+            ]
+        },
+        {
             text: '笔记',
             items: [
                 {
@@ -152,6 +162,18 @@ function nav() {
                     text: '婚礼',
                     link: '/about/marry'
                 }
+            ]
+        }
+    ]
+}
+
+function sidebarIos() {
+    return [
+        {
+            text: '多巴胺越狱',
+            collapsible: true,
+            items: [
+                {text: '插件推荐', link: '/ios/dopamine-sileo-plugins'}
             ]
         }
     ]
