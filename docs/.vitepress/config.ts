@@ -6,18 +6,9 @@ export default defineConfig({
     description: 'Vite & Vue powered static site generator.',
     lastUpdated: true,
     cleanUrls: true,
-    head: [
-        ['link', {
-            rel: "icon",
-            type: "image/png",
-            href: "https://github.githubassets.com/favicons/favicon.svg"
-        }],
-        ['meta', {name: "theme-color", content: "#ffffff"}],
-    ],
 
     themeConfig: {
         lastUpdatedText: 'Updated Date',
-        logo: 'https://vuejs.org/images/logo.png',
         search: {
             provider: 'local'
         },
@@ -43,8 +34,7 @@ export default defineConfig({
             next: '下一篇'
         },
         footer: {
-            message: 'Released under the MIT License.',
-            copyright: 'Copyright © 2022-${new Date().getFullYear()} MTGQ_TOP'
+            copyright: 'Copyright © 2023 mtgq.top All rights reserved'
         }
     }
 })
@@ -143,11 +133,15 @@ function nav() {
             ]
         },
         {
-            text: '苹果越狱',
+            text: '搞机玩家',
             items: [
                 {
-                    text: '多巴胺越狱插件推荐',
-                    link: '/ios/dopamine-sileo-plugins'
+                    text: 'iOS',
+                    link: '/ios/dopamine-rootless-in-sileo-plugins'
+                },
+                {
+                    text: 'Windows',
+                    link: '/windows/windows-skip-user-account'
                 }
             ]
         },
@@ -170,10 +164,17 @@ function nav() {
 function sidebarIos() {
     return [
         {
-            text: '多巴胺越狱',
+            text: 'iOS',
             collapsible: true,
             items: [
-                {text: '插件推荐', link: '/ios/dopamine-sileo-plugins'}
+                {text: 'Dopamine 无根越狱 Rootless', link: '/ios/dopamine-rootless-in-sileo-plugins'}
+            ]
+        },
+        {
+            text: 'Windows',
+            collapsible: true,
+            items: [
+                {text: '跳过 Windows 11 账户', link: '/windows/windows-skip-user-account'}
             ]
         }
     ]
