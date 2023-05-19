@@ -174,7 +174,8 @@ function sidebarIos() {
             text: 'windows',
             collapsible: true,
             items: [
-                {text: '跳过 Windows 11 账户', link: '/applications/windows/windows-skip-user-account'}
+                {text: '跳过 Windows 11 账户', link: '/applications/windows/windows-skip-user-account'},
+                {text: 'aaaa', link: '/applications/windows/windows-skip-user-account'}
             ]
         }
     ]
