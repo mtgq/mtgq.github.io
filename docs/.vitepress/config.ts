@@ -136,11 +136,11 @@ function nav() {
             text: '搞机玩家',
             items: [
                 {
-                    text: 'iOS',
+                    text: 'ios',
                     link: '/ios/dopamine-rootless-in-sileo-plugins'
                 },
                 {
-                    text: 'Windows',
+                    text: 'windows',
                     link: '/windows/windows-skip-user-account'
                 }
             ]
@@ -164,14 +164,14 @@ function nav() {
 function sidebarIos() {
     return [
         {
-            text: 'iOS',
+            text: 'ios',
             collapsible: true,
             items: [
                 {text: 'Dopamine 无根越狱 Rootless', link: '/ios/dopamine-rootless-in-sileo-plugins'}
             ]
         },
         {
-            text: 'Windows',
+            text: 'windows',
             collapsible: true,
             items: [
                 {text: '跳过 Windows 11 账户', link: '/windows/windows-skip-user-account'}
