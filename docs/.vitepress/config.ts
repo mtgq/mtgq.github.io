@@ -137,11 +137,11 @@ function nav() {
             items: [
                 {
                     text: 'ios',
-                    link: '/ios/dopamine-rootless-in-sileo-plugins'
+                    link: '/applications/ios/dopamine-rootless-in-sileo-plugins'
                 },
                 {
                     text: 'windows',
-                    link: '/windows/windows-skip-user-account'
+                    link: '/applications/windows/windows-skip-user-account'
                 }
             ]
         },
@@ -167,14 +167,14 @@ function sidebarIos() {
             text: 'ios',
             collapsible: true,
             items: [
-                {text: 'Dopamine 无根越狱 Rootless', link: '/ios/dopamine-rootless-in-sileo-plugins'}
+                {text: 'Dopamine 无根越狱 Rootless', link: '/applications/ios/dopamine-rootless-in-sileo-plugins'}
             ]
         },
         {
             text: 'windows',
             collapsible: true,
             items: [
-                {text: '跳过 Windows 11 账户', link: '/windows/windows-skip-user-account'}
+                {text: '跳过 Windows 11 账户', link: '/applications/windows/windows-skip-user-account'}
             ]
         }
     ]
