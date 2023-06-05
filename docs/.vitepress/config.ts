@@ -255,7 +255,8 @@ function sidebarBackend() {
                 {text: 'eq-ge都是什么意思', link: '/backend/php/eq-and-ge'},
                 {text: 'uniapp发布h5端', link: '/backend/php/uniapp'},
                 {text: '配置环境上传大文件', link: '/backend/php/config-php-upload'},
-                {text: '设置网站首页变灰色', link: '/backend/php/设置网站首页变灰色'}
+                {text: '设置网站首页变灰色', link: '/backend/php/设置网站首页变灰色'},
+                {text: 'php与phpMyAdmin对应关系', link: '/backend/php/phpMyAdmin'}
             ]
         },
         {
