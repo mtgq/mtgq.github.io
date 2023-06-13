@@ -253,7 +253,7 @@ function sidebarBackendJava() {
             text: 'java',
             collapsible: true,
             items: [
-                {text: '环境搭建工具下载', link: '/backend/java/java-started'}
+                {text: '环境搭建工具下载', link: '/backend/java/'}
             ]
         }
     ]
@@ -276,7 +276,7 @@ function sidebarBackend() {
             text: 'thinkphp',
             collapsible: true,
             items: [
-                {text: '环境搭建工具下载', link: '/backend/php/thinkphp5-paginate-foreach'}
+                {text: 'paginate不使用each', link: '/backend/php/thinkphp5-paginate-foreach'}
             ]
         },
         {
