@@ -253,7 +253,7 @@ function sidebarBackendJava() {
             text: 'java',
             collapsible: true,
             items: [
-                {text: '环境搭建工具下载', link: '/backend/java/'}
+                {text: '环境搭建工具下载', link: '/backend/java/java-started'}
             ]
         }
     ]
