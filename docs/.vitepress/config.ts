@@ -17,6 +17,7 @@ export default defineConfig({
             '/tools/': sidebarTools(),
             '/guide/': sidebarGuide(),
             '/backend/': sidebarBackend(),
+            '/backend/java': sidebarBackendJava(),
             '/mysql/': sidebarMysql(),
             '/about/': sidebarAbout(),
             '/wsl/': sidebarWsl(),
@@ -246,6 +247,18 @@ function sidebarGuide() {
     ]
 }
 
+function sidebarBackendJava() {
+    return [
+        {
+            text: 'java',
+            collapsible: true,
+            items: [
+                {text: '环境搭建工具下载', link: '/backend/java/java-started'}
+            ]
+        }
+    ]
+}
+
 function sidebarBackend() {
     return [
         {
@@ -257,6 +270,13 @@ function sidebarBackend() {
                 {text: '配置环境上传大文件', link: '/backend/php/config-php-upload'},
                 {text: '设置网站首页变灰色', link: '/backend/php/设置网站首页变灰色'},
                 {text: 'php与phpMyAdmin对应关系', link: '/backend/php/phpMyAdmin'}
+            ]
+        },
+        {
+            text: 'thinkphp',
+            collapsible: true,
+            items: [
+                {text: '环境搭建工具下载', link: '/backend/php/thinkphp5-paginate-foreach'}
             ]
         },
         {
