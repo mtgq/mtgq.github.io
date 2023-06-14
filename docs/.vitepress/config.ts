@@ -17,9 +17,9 @@ export default defineConfig({
             '/tools/': sidebarTools(),
             '/guide/': sidebarGuide(),
             '/backend/': sidebarBackend(),
-            '/backend/java': sidebarBackendJava(),
+            '/backend/java/': sidebarBackendJava(),
             '/mysql/': sidebarMysql(),
-            '/about/': sidebarAbout(),
+            '/notes/': sidebarNotes(),
             '/wsl/': sidebarWsl(),
             '/browser/': sidebarBrowser(),
             '/book/': sidebarBook(),
@@ -104,7 +104,7 @@ function nav() {
             items: [
                 {
                     text: 'php',
-                    link: '/backend/php/config-php-upload'
+                    link: '/backend/php/eq-and-ge'
                 },
                 {
                     text: 'java',
@@ -121,11 +121,11 @@ function nav() {
                 },
                 {
                     text: 'nginx',
-                    link: '/server/nginx'
+                    link: '/server/nginx/index'
                 },
                 {
                     text: 'apache',
-                    link: '/server/apache'
+                    link: '/server/apache/index'
                 },
                 {
                     text: 'docker',
@@ -151,11 +151,11 @@ function nav() {
             items: [
                 {
                     text: '关于',
-                    link: '/about/me'
+                    link: '/notes/about/me'
                 },
                 {
                     text: '婚礼',
-                    link: '/about/marry'
+                    link: '/notes/about/marry'
                 }
             ]
         }
@@ -253,8 +253,7 @@ function sidebarBackendJava() {
             text: 'java',
             collapsible: true,
             items: [
-                {text: '环境搭建工具下载', link: '/backend/java/java-started'},
-                {text: 'eq-ge都是什么意思', link: '/backend/php/eq-and-ge'},
+                {text: '环境搭建工具下载', link: '/backend/java/java-started'}
             ]
         }
     ]
@@ -310,21 +309,21 @@ function sidebarWsl() {
     ]
 }
 
-function sidebarAbout() {
+function sidebarNotes() {
     return [
         {
             text: '关于',
             collapsible: true,
             items: [
-                {text: '关于我', link: '/about/me'},
-                {text: '关于本文档', link: '/about/this-doc'}
+                {text: '关于我', link: '/notes/about/me'},
+                {text: '关于本文档', link: '/notes/about/this-doc'}
             ]
         },
         {
             text: '结婚',
             collapsible: true,
             items: [
-                {text: '人生大事（ 结婚 ）', link: '/about/marry'}
+                {text: '人生大事（ 结婚 ）', link: '/notes/about/marry'}
             ]
         }
     ]
@@ -360,7 +359,9 @@ function sidebarFrontend() {
                 {text: '封装cache', link: '/frontend/uniapp/cache'},
                 {text: '项目中定义常量', link: '/frontend/uniapp/define'},
                 {text: 'data中使用默认日期', link: '/frontend/uniapp/date'},
-                {text: '项目推荐', link: '/frontend/uniapp/ext'}
+                {text: '优秀项目记录', link: '/frontend/uniapp/ext'},
+                {text: 'HBuilderX插件记录', link: '/frontend/uniapp/HBuilderX'},
+                {text: '开发注意事项', link: '/frontend/uniapp/feature'}
             ]
         }
     ]
@@ -382,14 +383,14 @@ function sidebarServer() {
             text: 'nginx',
             collapsible: true,
             items: [
-                {text: 'nginx配置文件详解', link: '/server/nginx'}
+                {text: 'nginx配置文件详解', link: '/server/nginx/index'}
             ]
         },
         {
             text: 'apache',
             collapsible: true,
             items: [
-                {text: 'apache配置文件详解', link: '/server/apache'}
+                {text: 'apache配置文件详解', link: '/server/apache/index'}
             ]
         },
         {

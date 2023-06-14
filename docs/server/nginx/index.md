@@ -2,7 +2,7 @@
 
 ## nginx添加跨域配置
 
-```sh
+```
 server {
     ...省略部分代码...
     location ~ .*\.(gif|jpg|jpeg|png|bmp|swf)$
@@ -24,10 +24,6 @@ server {
 location /m/ {
     index index.html;
     try_files $uri $uri/ /m/index.html;
-}
-location /member/ {
-    index index.html;
-    try_files $uri $uri/ /member/index.html;
 }
 
 // v3.5.0 及以上，只需配置最后一项即可

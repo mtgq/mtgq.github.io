@@ -3,19 +3,19 @@
 ## 首次下载
 
 ```sh
-yarn install
+npm install
 ```
 
 ## 运行
 
 ```sh
-yarn docs:dev
+npm run docs:dev
 ```
 
 ## 部署
 
 ```sh
-yarn docs:build
+npm run docs:build
 ```
 
 ## 环境要求
