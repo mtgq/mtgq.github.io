@@ -291,7 +291,8 @@ function sidebarMysql() {
                 {text: '配置远程连接', link: '/mysql/how-to-configure-mysql-remote-connection'},
                 {text: 'mysqldump使用', link: '/mysql/how-to-use-mysqldump'},
                 {text: 'sql_mode区别', link: '/mysql/sql_mode-diff'},
-                {text: 'server has gone away', link: '/mysql/server-has-gone-away'}
+                {text: 'server has gone away', link: '/mysql/server-has-gone-away'},
+                {text: 'replace替换函数使用', link: '/mysql/mysql-replace'}
             ]
         }
     ]
