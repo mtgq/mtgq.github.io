@@ -25,7 +25,8 @@ export default defineConfig({
             '/book/': sidebarBook(),
             '/frontend/': sidebarFrontend(),
             '/server/': sidebarServer(),
-            '/ios/': sidebarIos()
+            '/ios/': sidebarIos(),
+            '/frontend/js/': sidebarJs()
         },
         socialLinks: [
             {icon: 'github', link: 'https://github.com/mtgq/mtgq.github.io'},
@@ -96,6 +97,7 @@ function nav() {
             text: '前端',
             items: [
                 {text: 'npm', link: 'frontend/npm'},
+                {text: 'js', link: '/frontend/js/js-code-snippet-1'},
                 {text: 'uniapp', link: '/frontend/uniapp/css'},
             ]
         },
@@ -364,6 +366,18 @@ function sidebarFrontend() {
                 {text: '优秀项目记录', link: '/frontend/uniapp/ext'},
                 {text: 'HBuilderX插件记录', link: '/frontend/uniapp/HBuilderX'},
                 {text: '开发注意事项', link: '/frontend/uniapp/feature'}
+            ]
+        }
+    ]
+}
+
+function sidebarJs() {
+    return [
+        {
+            text: '代码片段',
+            collapsible: true,
+            items: [
+                {text: '收集的片段', link: '/frontend/js/js-code-snippet-1'}
             ]
         }
     ]
