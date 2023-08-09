@@ -359,6 +359,7 @@ function sidebarFrontend() {
             text: 'uniapp',
             collapsible: true,
             items: [
+                {text: '论坛问题收集', link: '/frontend/uniapp/bbs'},
                 {text: 'page引入css', link: '/frontend/uniapp/css'},
                 {text: '封装cache', link: '/frontend/uniapp/cache'},
                 {text: '项目中定义常量', link: '/frontend/uniapp/define'},
