@@ -26,6 +26,7 @@ export default defineConfig({
             '/frontend/': sidebarFrontend(),
             '/server/': sidebarServer(),
             '/ios/': sidebarIos(),
+            '/windows/': sidebarWin(),
             '/frontend/js/': sidebarJs()
         },
         socialLinks: [
@@ -140,11 +141,11 @@ function nav() {
             items: [
                 {
                     text: 'ios',
-                    link: '/applications/ios/dopamine-rootless-in-sileo-plugins'
+                    link: '/ios/dopamine-rootless-in-sileo-plugins'
                 },
                 {
                     text: 'windows',
-                    link: '/applications/windows/windows-skip-user-account'
+                    link: '/windows/windows-skip-user-account'
                 }
             ]
         },
@@ -170,15 +171,20 @@ function sidebarIos() {
             text: 'ios',
             collapsible: true,
             items: [
-                {text: 'Dopamine 无根越狱 Rootless', link: '/applications/ios/dopamine-rootless-in-sileo-plugins'}
+                {text: 'Dopamine 无根越狱 Rootless', link: '/ios/dopamine-rootless-in-sileo-plugins'}
             ]
-        },
+        }
+    ]
+}
+
+function sidebarWin() {
+    return [
         {
             text: 'windows',
             collapsible: true,
             items: [
-                {text: '跳过 Windows 11 账户', link: '/applications/windows/windows-skip-user-account'},
-                {text: 'aaaa', link: '/applications/windows/windows-skip-user-account'}
+                {text: '跳过 Windows 11 账户', link: '/windows/windows-skip-user-account'},
+                {text: 'wps操作技巧', link: '/windows/wps-skill'}
             ]
         }
     ]
