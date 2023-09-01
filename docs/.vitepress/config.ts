@@ -100,6 +100,7 @@ function nav() {
                 {text: 'npm', link: 'frontend/npm'},
                 {text: 'js', link: '/frontend/js/js-code-snippet-1'},
                 {text: 'uniapp', link: '/frontend/uniapp/css'},
+                {text: 'web相关', link: '/web/head'},
             ]
         },
         {
