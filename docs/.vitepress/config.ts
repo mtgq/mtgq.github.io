@@ -184,7 +184,8 @@ function sidebarWin() {
             collapsible: true,
             items: [
                 {text: '跳过 Windows 11 账户', link: '/windows/windows-skip-user-account'},
-                {text: 'wps操作技巧', link: '/windows/wps-skill'}
+                {text: 'wps操作技巧', link: '/windows/wps-skill'},
+                {text: '浏览器搜索引擎', link: '/windows/browser-url'}
             ]
         }
     ]
