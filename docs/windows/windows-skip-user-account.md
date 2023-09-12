@@ -11,3 +11,11 @@
 # win10 网络小地球问题
 
 https://www.bilibili.com/read/cv21041256/
+
+# win10 共享文件夹
+
+https://www.cnblogs.com/SunSpring/p/14453191.html
+
+# Windows 沙盒
+
+https://learn.microsoft.com/zh-cn/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview

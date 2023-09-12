@@ -27,7 +27,8 @@ export default defineConfig({
             '/server/': sidebarServer(),
             '/ios/': sidebarIos(),
             '/windows/': sidebarWin(),
-            '/frontend/js/': sidebarJs()
+            '/frontend/js/': sidebarJs(),
+            '/web/': sidebarWeb()
         },
         socialLinks: [
             {icon: 'github', link: 'https://github.com/mtgq/mtgq.github.io'},
@@ -336,6 +337,19 @@ function sidebarNotes() {
             collapsible: true,
             items: [
                 {text: '人生大事（ 结婚 ）', link: '/notes/about/marry'}
+            ]
+        }
+    ]
+}
+
+function sidebarWeb() {
+    return [
+        {
+            text: 'web内容',
+            collapsible: true,
+            items: [
+                {text: '自用油猴脚本', link: '/web/head'},
+                {text: 'Layui', link: '/web/layui'},
             ]
         }
     ]
