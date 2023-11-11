@@ -15,3 +15,8 @@ mysqldump -uroot -proot --databases db1 db2 >/tmp/user.sql
 参考链接：
 
 https://www.cnblogs.com/chenmh/p/5300370.html
+
+
+## 宝塔备份网站教程
+
+https://www.bt.cn/bbs/thread-82375-1-1.html
