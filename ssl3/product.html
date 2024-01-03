@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Quick Start - Layui</title>
-    <link href="https://cdn.bootcdn.net/ajax/libs/layui/2.9.2/css/layui.min.css" rel="stylesheet">
+    <title>EV Code Signing in the Cloud</title>
+    <link href="./layui/css/layui.css" rel="stylesheet">
     <link href="./index.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 
@@ -16,266 +17,354 @@
         .layui-colla-title {
             background: white !important;
         }
+
+        .showNav {
+            display: inline-block;
+        }
+
+        .category-container {
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            background-color: #f4f4f4;
+            color: #444;
+            border-radius: 6px;
+        }
     </style>
 </head>
+
 <body>
 
-<div class="logo u-border-bottom">
+    <div class="logo u-border-bottom">
+        <div class="layui-container">
+            <svg width="249" height="95" viewBox="0 0 249 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 -3H249V95H0V-3Z" fill="white"></path>
+                <path
+                    d="M79.2483 76.1729C80.1657 76.1729 80.8572 75.4768 80.8572 74.3973C80.8572 73.3373 80.1969 72.5912 79.2583 72.5912C78.3609 72.5912 77.6495 73.2469 77.6495 74.3973C77.6495 75.3657 78.2586 76.1729 79.2483 76.1729ZM76.5674 69.7153H77.6907V72.4507C77.8355 72.2187 78.4134 71.613 79.4343 71.613C80.9708 71.613 81.9905 72.7621 81.9905 74.3875C81.9905 76.0019 80.8984 77.1425 79.3619 77.1425C78.321 77.1425 77.7731 76.5063 77.6295 76.3243V77.0106H76.5674V69.7153Z"
+                    fill="#00A3E0"></path>
+                <path
+                    d="M84.0348 78.8166L84.7986 76.9201L82.6631 71.7435H83.87L85.3241 75.578L86.7569 71.7435H87.9326L85.1169 78.8166H84.0348Z"
+                    fill="#00A3E0"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M127.052 69.8133C127.049 69.3883 126.804 69.1258 126.347 69.1258H123.296C121.656 69.1258 120.95 69.8121 120.95 71.4216V74.6358C120.95 75.2708 120.659 75.5541 119.991 75.5541H116.022C115.599 75.5541 115.318 75.8215 115.318 76.2477C115.318 76.6593 115.588 76.9304 116.012 76.9304H119.991C121.625 76.9304 122.357 76.2441 122.357 74.6358V71.4216C122.357 70.7377 122.61 70.5045 123.296 70.5045H126.347C126.804 70.5045 127.049 70.2346 127.052 69.8133Z"
+                    fill="#231F20"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M102.647 69.124L95.6077 69.1253C94.1998 69.1253 93.2612 70.0436 93.2612 71.4223V74.6365C93.2612 76.014 94.1998 76.9311 95.6077 76.9286H101.239C101.708 76.9311 102.177 76.4731 102.177 76.014V74.4069C102.177 74.0088 101.874 73.7181 101.489 73.7181C101.049 73.7181 100.77 73.988 100.77 74.4069V75.5548H95.6077C95.1384 75.5548 94.6691 75.0944 94.6691 74.6365V71.4223C94.6691 70.9619 95.1384 70.504 95.6077 70.5015L102.647 70.504C103.118 70.504 103.587 70.9619 103.587 71.4223V76.2435C103.587 76.605 103.868 76.9311 104.291 76.9311C104.689 76.9311 104.994 76.7125 104.994 76.2435V71.4223C104.994 70.0436 104.056 69.1253 102.647 69.124Z"
+                    fill="#231F20"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M128.459 74.6358C128.459 76.2441 129.148 76.9304 130.806 76.9304H139.487C139.911 76.9304 140.192 76.6641 140.192 76.2392C140.192 75.8276 139.921 75.5541 139.495 75.5541H130.806C130.101 75.5431 129.866 75.3074 129.866 74.6358V71.4216C129.866 70.7353 130.122 70.5033 130.806 70.5033H137.845C138.508 70.5033 138.784 70.7438 138.784 71.4216C138.784 72.1091 138.538 72.3399 137.845 72.3399H131.984C131.511 72.3399 131.28 72.5707 131.28 73.0275C131.28 73.4695 131.52 73.7174 131.984 73.7174H137.845C139.507 73.7174 140.192 73.0275 140.192 71.4216C140.192 69.8145 139.484 69.1258 137.845 69.1258H130.806C129.12 69.1258 128.459 69.8133 128.459 71.4216V74.6358Z"
+                    fill="#231F20"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M141.599 74.6358C141.599 76.2441 142.289 76.9304 143.946 76.9304H151.832C152.257 76.9304 152.536 76.6641 152.536 76.2392C152.536 75.8276 152.292 75.5541 151.841 75.5541H143.946C143.243 75.5431 143.006 75.3074 143.006 74.6358V71.4216C143.006 70.7512 143.243 70.513 143.946 70.5033H151.822C152.248 70.5033 152.528 70.2395 152.528 69.8145C152.528 69.4018 152.257 69.1258 151.831 69.1258H143.946C142.289 69.1258 141.599 69.8133 141.599 71.4216V74.6358Z"
+                    fill="#231F20"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M156.433 75.5526C155.729 75.5428 155.495 75.2937 155.495 74.6245V71.4103C155.495 70.7399 155.729 70.5128 156.433 70.5042H163.472C164.175 70.5128 164.411 70.7509 164.411 71.4213V74.6245C164.411 75.2937 164.175 75.5428 163.472 75.5538L156.433 75.5526ZM154.088 74.6245C154.088 76.2328 154.778 76.9301 156.433 76.9301H163.472C165.129 76.9301 165.819 76.2328 165.819 74.6245V71.4103C165.819 69.8033 165.129 69.1255 163.472 69.1255H156.433C154.778 69.1255 154.088 69.8033 154.088 71.4103V74.6245Z"
+                    fill="#231F20"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M118.134 69.8133C118.131 69.3883 117.885 69.1258 117.427 69.1258H114.378C112.738 69.1258 112.03 69.8121 112.03 71.4216V74.6358C112.03 75.2708 111.741 75.5541 111.073 75.5541H107.077C106.655 75.5541 106.399 75.8215 106.399 76.2477C106.399 76.6593 106.655 76.9304 107.077 76.9304H111.073C112.706 76.9304 113.438 76.2441 113.438 74.6358V71.4216C113.438 70.7377 113.692 70.5045 114.378 70.5045H117.427C117.887 70.5045 118.131 70.2346 118.134 69.8133Z"
+                    fill="#231F20"></path>
+                <path
+                    d="M101.584 50.0829C100.311 51.0166 97.3556 53.0174 93.2181 53.0174C86.398 53.0174 81.9421 47.9487 81.9421 41.5016C81.9421 35.0546 86.5344 29.9858 93.1726 29.9858C96.901 29.9858 99.8109 31.7199 101.175 32.7425L102.675 28.3852C100.811 27.0069 97.5375 25.3617 93.0362 25.3617C83.7154 25.3617 76.7134 32.3424 76.7134 41.5016C76.7134 50.6609 83.4426 57.6415 93.0817 57.6415C97.9922 57.6415 101.493 55.5962 103.085 54.3957L101.584 50.0829Z"
+                    fill="#231F20"></path>
+                <path
+                    d="M106.834 45.5477C106.834 52.5728 111.744 57.6415 119.156 57.6415C124.794 57.6415 127.931 54.4847 129.067 52.5728L125.794 50.1718C124.884 51.4612 122.838 53.4176 119.246 53.4176C115.018 53.4176 111.972 50.7498 111.881 46.6148H129.749C129.795 46.2146 129.795 45.8145 129.795 45.4143C129.795 38.1225 125.566 33.2761 118.383 33.2761C111.881 33.2761 106.834 38.3448 106.834 45.5477ZM112.063 43.2801C112.381 39.6342 115.018 37.3221 118.428 37.3221C121.838 37.3221 124.566 39.4563 124.748 43.2801H112.063Z"
+                    fill="#231F20"></path>
+                <path
+                    d="M146.323 33.2761C142.959 33.2761 140.458 35.188 139.549 37.5V33.8541H134.684V57.0635H139.64V47.0594C139.64 42.0352 141.14 38.1669 146.323 38.1669V33.2761Z"
+                    fill="#231F20"></path>
+                <path
+                    d="M152.697 33.8541H150.06V37.8557H152.697V47.9042C152.697 53.5954 154.425 57.3747 160.2 57.3747C161.745 57.3747 162.609 57.1969 162.609 57.1969V53.0174C162.609 53.0174 162.064 53.0619 161.655 53.0619C159.017 53.0619 157.608 52.2616 157.608 48.6601V37.8557H162.427V33.8541H157.608V29.0077H152.697V33.8541Z"
+                    fill="#231F20"></path>
+                <path
+                    d="M175.588 57.6415C178.771 57.6415 181.226 55.9075 182.272 54.04V57.0635H187.137V33.8541H182.181V47.8598C182.181 51.0611 180.135 53.2842 176.998 53.2842C174.27 53.2842 172.224 51.4168 172.224 48.2155V33.8541H167.313V47.8153C167.313 52.884 169.45 57.6415 175.588 57.6415Z"
+                    fill="#231F20"></path>
+                <path
+                    d="M226.912 41.9018C226.912 36.8775 224.184 33.2761 218.819 33.2761C215.545 33.2761 212.908 34.6989 211.499 37.1443C210.362 34.7878 207.998 33.2761 204.679 33.2761C201.45 33.2761 199.131 35.099 198.268 36.8775C198.268 36.8775 198.268 35.8104 198.268 33.8541H193.403V57.0635H198.359V43.1023C198.359 39.7676 200.45 37.6334 203.133 37.6334C205.952 37.6334 207.679 39.5453 207.679 42.7021V57.0635H212.635V43.1912C212.635 39.6342 214.681 37.6334 217.455 37.6334C220.41 37.6334 222.002 39.5453 222.002 43.1467V57.0635H226.912V41.9018Z"
+                    fill="#231F20"></path>
+                <path
+                    d="M54.4112 30.3709C54.9542 31.2441 54.6708 32.37 53.7884 32.9208C52.8998 33.452 51.7465 33.1699 51.2048 32.3102C50.0391 30.4344 48.0608 29.3341 45.8679 29.3341C42.4106 29.3341 39.6048 32.0904 39.6048 35.462C39.6048 38.8496 42.4106 41.5936 45.8679 41.5936C48.0608 41.5936 50.0391 40.4872 51.2048 38.6457C51.7465 37.7713 52.8998 37.4843 53.7884 38.0265C54.6708 38.5675 54.9542 39.6873 54.4112 40.5519C52.569 43.5243 49.3838 45.2901 45.8679 45.2901C40.3462 45.2901 35.8355 40.8878 35.8355 35.462C35.8355 30.0705 40.3462 25.6535 45.8679 25.6535C49.3838 25.6535 52.569 27.423 54.4112 30.3709ZM28.9908 20.7199C28.7761 20.8518 28.6014 21.0631 28.5427 21.3122C26.7816 27.6489 22.7639 48.9415 44.8544 56.8157C44.9717 56.8572 45.0815 56.8816 45.2076 56.8816H45.2625H45.3199C45.4398 56.8816 45.5571 56.8572 45.6806 56.8157C67.7936 48.9317 63.7447 27.6489 61.9986 21.3122C61.9274 21.0631 61.7527 20.8518 61.533 20.704C56.6666 17.7353 51.0501 16.1734 45.27 16.1722H45.2563C39.4912 16.1734 33.8784 17.7353 28.9908 20.7199Z"
+                    fill="#00A3E0"></path>
+            </svg>
+        </div>
+    </div>
+
     <div class="layui-container">
-        <svg width="249" height="95" viewBox="0 0 249 95" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 -3H249V95H0V-3Z" fill="white"></path>
-            <path d="M79.2483 76.1729C80.1657 76.1729 80.8572 75.4768 80.8572 74.3973C80.8572 73.3373 80.1969 72.5912 79.2583 72.5912C78.3609 72.5912 77.6495 73.2469 77.6495 74.3973C77.6495 75.3657 78.2586 76.1729 79.2483 76.1729ZM76.5674 69.7153H77.6907V72.4507C77.8355 72.2187 78.4134 71.613 79.4343 71.613C80.9708 71.613 81.9905 72.7621 81.9905 74.3875C81.9905 76.0019 80.8984 77.1425 79.3619 77.1425C78.321 77.1425 77.7731 76.5063 77.6295 76.3243V77.0106H76.5674V69.7153Z"
-                  fill="#00A3E0"></path>
-            <path d="M84.0348 78.8166L84.7986 76.9201L82.6631 71.7435H83.87L85.3241 75.578L86.7569 71.7435H87.9326L85.1169 78.8166H84.0348Z"
-                  fill="#00A3E0"></path>
-            <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M127.052 69.8133C127.049 69.3883 126.804 69.1258 126.347 69.1258H123.296C121.656 69.1258 120.95 69.8121 120.95 71.4216V74.6358C120.95 75.2708 120.659 75.5541 119.991 75.5541H116.022C115.599 75.5541 115.318 75.8215 115.318 76.2477C115.318 76.6593 115.588 76.9304 116.012 76.9304H119.991C121.625 76.9304 122.357 76.2441 122.357 74.6358V71.4216C122.357 70.7377 122.61 70.5045 123.296 70.5045H126.347C126.804 70.5045 127.049 70.2346 127.052 69.8133Z"
-                  fill="#231F20"></path>
-            <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M102.647 69.124L95.6077 69.1253C94.1998 69.1253 93.2612 70.0436 93.2612 71.4223V74.6365C93.2612 76.014 94.1998 76.9311 95.6077 76.9286H101.239C101.708 76.9311 102.177 76.4731 102.177 76.014V74.4069C102.177 74.0088 101.874 73.7181 101.489 73.7181C101.049 73.7181 100.77 73.988 100.77 74.4069V75.5548H95.6077C95.1384 75.5548 94.6691 75.0944 94.6691 74.6365V71.4223C94.6691 70.9619 95.1384 70.504 95.6077 70.5015L102.647 70.504C103.118 70.504 103.587 70.9619 103.587 71.4223V76.2435C103.587 76.605 103.868 76.9311 104.291 76.9311C104.689 76.9311 104.994 76.7125 104.994 76.2435V71.4223C104.994 70.0436 104.056 69.1253 102.647 69.124Z"
-                  fill="#231F20"></path>
-            <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M128.459 74.6358C128.459 76.2441 129.148 76.9304 130.806 76.9304H139.487C139.911 76.9304 140.192 76.6641 140.192 76.2392C140.192 75.8276 139.921 75.5541 139.495 75.5541H130.806C130.101 75.5431 129.866 75.3074 129.866 74.6358V71.4216C129.866 70.7353 130.122 70.5033 130.806 70.5033H137.845C138.508 70.5033 138.784 70.7438 138.784 71.4216C138.784 72.1091 138.538 72.3399 137.845 72.3399H131.984C131.511 72.3399 131.28 72.5707 131.28 73.0275C131.28 73.4695 131.52 73.7174 131.984 73.7174H137.845C139.507 73.7174 140.192 73.0275 140.192 71.4216C140.192 69.8145 139.484 69.1258 137.845 69.1258H130.806C129.12 69.1258 128.459 69.8133 128.459 71.4216V74.6358Z"
-                  fill="#231F20"></path>
-            <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M141.599 74.6358C141.599 76.2441 142.289 76.9304 143.946 76.9304H151.832C152.257 76.9304 152.536 76.6641 152.536 76.2392C152.536 75.8276 152.292 75.5541 151.841 75.5541H143.946C143.243 75.5431 143.006 75.3074 143.006 74.6358V71.4216C143.006 70.7512 143.243 70.513 143.946 70.5033H151.822C152.248 70.5033 152.528 70.2395 152.528 69.8145C152.528 69.4018 152.257 69.1258 151.831 69.1258H143.946C142.289 69.1258 141.599 69.8133 141.599 71.4216V74.6358Z"
-                  fill="#231F20"></path>
-            <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M156.433 75.5526C155.729 75.5428 155.495 75.2937 155.495 74.6245V71.4103C155.495 70.7399 155.729 70.5128 156.433 70.5042H163.472C164.175 70.5128 164.411 70.7509 164.411 71.4213V74.6245C164.411 75.2937 164.175 75.5428 163.472 75.5538L156.433 75.5526ZM154.088 74.6245C154.088 76.2328 154.778 76.9301 156.433 76.9301H163.472C165.129 76.9301 165.819 76.2328 165.819 74.6245V71.4103C165.819 69.8033 165.129 69.1255 163.472 69.1255H156.433C154.778 69.1255 154.088 69.8033 154.088 71.4103V74.6245Z"
-                  fill="#231F20"></path>
-            <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M118.134 69.8133C118.131 69.3883 117.885 69.1258 117.427 69.1258H114.378C112.738 69.1258 112.03 69.8121 112.03 71.4216V74.6358C112.03 75.2708 111.741 75.5541 111.073 75.5541H107.077C106.655 75.5541 106.399 75.8215 106.399 76.2477C106.399 76.6593 106.655 76.9304 107.077 76.9304H111.073C112.706 76.9304 113.438 76.2441 113.438 74.6358V71.4216C113.438 70.7377 113.692 70.5045 114.378 70.5045H117.427C117.887 70.5045 118.131 70.2346 118.134 69.8133Z"
-                  fill="#231F20"></path>
-            <path d="M101.584 50.0829C100.311 51.0166 97.3556 53.0174 93.2181 53.0174C86.398 53.0174 81.9421 47.9487 81.9421 41.5016C81.9421 35.0546 86.5344 29.9858 93.1726 29.9858C96.901 29.9858 99.8109 31.7199 101.175 32.7425L102.675 28.3852C100.811 27.0069 97.5375 25.3617 93.0362 25.3617C83.7154 25.3617 76.7134 32.3424 76.7134 41.5016C76.7134 50.6609 83.4426 57.6415 93.0817 57.6415C97.9922 57.6415 101.493 55.5962 103.085 54.3957L101.584 50.0829Z"
-                  fill="#231F20"></path>
-            <path d="M106.834 45.5477C106.834 52.5728 111.744 57.6415 119.156 57.6415C124.794 57.6415 127.931 54.4847 129.067 52.5728L125.794 50.1718C124.884 51.4612 122.838 53.4176 119.246 53.4176C115.018 53.4176 111.972 50.7498 111.881 46.6148H129.749C129.795 46.2146 129.795 45.8145 129.795 45.4143C129.795 38.1225 125.566 33.2761 118.383 33.2761C111.881 33.2761 106.834 38.3448 106.834 45.5477ZM112.063 43.2801C112.381 39.6342 115.018 37.3221 118.428 37.3221C121.838 37.3221 124.566 39.4563 124.748 43.2801H112.063Z"
-                  fill="#231F20"></path>
-            <path d="M146.323 33.2761C142.959 33.2761 140.458 35.188 139.549 37.5V33.8541H134.684V57.0635H139.64V47.0594C139.64 42.0352 141.14 38.1669 146.323 38.1669V33.2761Z"
-                  fill="#231F20"></path>
-            <path d="M152.697 33.8541H150.06V37.8557H152.697V47.9042C152.697 53.5954 154.425 57.3747 160.2 57.3747C161.745 57.3747 162.609 57.1969 162.609 57.1969V53.0174C162.609 53.0174 162.064 53.0619 161.655 53.0619C159.017 53.0619 157.608 52.2616 157.608 48.6601V37.8557H162.427V33.8541H157.608V29.0077H152.697V33.8541Z"
-                  fill="#231F20"></path>
-            <path d="M175.588 57.6415C178.771 57.6415 181.226 55.9075 182.272 54.04V57.0635H187.137V33.8541H182.181V47.8598C182.181 51.0611 180.135 53.2842 176.998 53.2842C174.27 53.2842 172.224 51.4168 172.224 48.2155V33.8541H167.313V47.8153C167.313 52.884 169.45 57.6415 175.588 57.6415Z"
-                  fill="#231F20"></path>
-            <path d="M226.912 41.9018C226.912 36.8775 224.184 33.2761 218.819 33.2761C215.545 33.2761 212.908 34.6989 211.499 37.1443C210.362 34.7878 207.998 33.2761 204.679 33.2761C201.45 33.2761 199.131 35.099 198.268 36.8775C198.268 36.8775 198.268 35.8104 198.268 33.8541H193.403V57.0635H198.359V43.1023C198.359 39.7676 200.45 37.6334 203.133 37.6334C205.952 37.6334 207.679 39.5453 207.679 42.7021V57.0635H212.635V43.1912C212.635 39.6342 214.681 37.6334 217.455 37.6334C220.41 37.6334 222.002 39.5453 222.002 43.1467V57.0635H226.912V41.9018Z"
-                  fill="#231F20"></path>
-            <path d="M54.4112 30.3709C54.9542 31.2441 54.6708 32.37 53.7884 32.9208C52.8998 33.452 51.7465 33.1699 51.2048 32.3102C50.0391 30.4344 48.0608 29.3341 45.8679 29.3341C42.4106 29.3341 39.6048 32.0904 39.6048 35.462C39.6048 38.8496 42.4106 41.5936 45.8679 41.5936C48.0608 41.5936 50.0391 40.4872 51.2048 38.6457C51.7465 37.7713 52.8998 37.4843 53.7884 38.0265C54.6708 38.5675 54.9542 39.6873 54.4112 40.5519C52.569 43.5243 49.3838 45.2901 45.8679 45.2901C40.3462 45.2901 35.8355 40.8878 35.8355 35.462C35.8355 30.0705 40.3462 25.6535 45.8679 25.6535C49.3838 25.6535 52.569 27.423 54.4112 30.3709ZM28.9908 20.7199C28.7761 20.8518 28.6014 21.0631 28.5427 21.3122C26.7816 27.6489 22.7639 48.9415 44.8544 56.8157C44.9717 56.8572 45.0815 56.8816 45.2076 56.8816H45.2625H45.3199C45.4398 56.8816 45.5571 56.8572 45.6806 56.8157C67.7936 48.9317 63.7447 27.6489 61.9986 21.3122C61.9274 21.0631 61.7527 20.8518 61.533 20.704C56.6666 17.7353 51.0501 16.1734 45.27 16.1722H45.2563C39.4912 16.1734 33.8784 17.7353 28.9908 20.7199Z"
-                  fill="#00A3E0"></path>
-        </svg>
+        <ul class="layui-nav layui-bg-gray ws-bg-light">
+            <li class="layui-nav-item">
+                <a href="./">
+                    <h2>Electronic signature</h2>
+                </a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="./product.html">
+                    <h2>Category</h2>
+                </a>
+            </li>
+            <li class="layui-nav-item"><a href="">
+                    <h2>Cards and card readers</h2>
+                </a></li>
+            <li class="layui-nav-item"><a href="">
+                    <h2>Dedicated Solutions</h2>
+                </a>
+            </li>
+            <li class="layui-nav-item"><a href="">
+                    <h2>Partner Reseller Program</h2>
+                </a>
+            </li>
+            <li class="layui-nav-item layui-hide" id="loginDiv">
+                <a href="javascript:;">
+                    <h2 id="username"></h2>
+                </a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">
+                            <h2>Order List</h2>
+                        </a>
+                    </dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item layui-hide" id="noLoginDiv">
+                <a href="./register.html">
+                    <h2>Sign in</h2>
+                </a>
+                <dl class="layui-nav-child">
+                    <dd><a href="./register.html">Sign in</a></dd>
+                    <dd><a href="./login.html"> Sign up</a></dd>
+                </dl>
+            </li>
+        </ul>
     </div>
-</div>
 
-<div class="layui-container">
-    <ul class="layui-nav layui-bg-gray ws-bg-light">
-        <li class="layui-nav-item">
-            <a href="">
-                <h2>Electronic signature</h2>
-            </a>
-        </li>
-        <li class="layui-nav-item">
-            <a href="javascript:;">
-                <h2>Data security</h2>
-            </a>
-        </li>
-        <li class="layui-nav-item"><a href="">
-            <h2>Cards and card readers</h2>
-        </a></li>
-        <li class="layui-nav-item"><a href="">
-            <h2>Dedicated Solutions</h2>
-        </a></li>
-        <li class="layui-nav-item"><a href="">
-            <h2>Partner Reseller Program</h2>
-        </a></li>
-        <li class="layui-nav-item"><a href="">
-            <h2>About us</h2>
-        </a></li>
-        <li class="layui-nav-item"><a href="">
-            <h2>Contact</h2>
-        </a></li>
-    </ul>
-</div>
-
-<div style="margin: 80px 0;">
-    <div class="layui-container">
-        <div class="layui-row">
-            <div class="layui-col-md3">
-                <div class="layui-collapse">
-                    <div class="layui-colla-item">
-                        <div class="layui-colla-title">Collapse Title 1</div>
-                        <div class="layui-colla-content layui-show">
-                            <p>Content 1</p>
-                        </div>
-                    </div>
-                    <div class="layui-colla-item">
-                        <div class="layui-colla-title">Collapse Title 2</div>
-                        <div class="layui-colla-content layui-show">
-                            <p>Content 2</p>
-                        </div>
-                    </div>
-                    <div class="layui-colla-item">
-                        <div class="layui-colla-title">Collapse Title 3</div>
-                        <div class="layui-colla-content layui-show">
-                            <ul>
-                                <li>Content list</li>
-                                <li>Content list</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="layui-colla-item">
-                        <div class="layui-colla-title">折叠面板的标题</div>
-                        <div class="layui-colla-content layui-show">
-                            <p>折叠面板的内容</p>
+    <div style="margin: 80px 0;">
+        <div class="layui-container">
+            <div class="layui-row">
+                <div class="layui-col-md3">
+                    <div class="layui-collapse">
+                        <div class="layui-colla-item">
+                            <div class="layui-colla-title">Category</div>
+                            <div class="layui-colla-content layui-show" id="renderedKeys"></div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="layui-col-md9">
+                <div class="layui-col-md9">
 
-                <div class="buy-box" style="padding:0 0 30px 30px">
-                    <div class="buy-title" style="font-weight: bold;font-size: 40px;">
-                        Code signing
-                    </div>
-                    <div class="buy-desc" style="font-size: 12px;margin-top: 20px;line-height: 25px;color: #A7A5A6;">
-                        Code signing certificate is used for protection of application's code with an electronic
-                        signature.
-                        Because this certificate includes confirmed details used to identify a software producer, the
-                        software code used for its security ceased being anonymous. Additionally, a positive
-                        verification of
-                        electronic signature ensures the final User that there are no unauthorized changes in the
-                        installed
-                        application.
-                    </div>
-                    <div class="buy-card-title" style="font-weight: bold;font-size: 20px;margin: 20px 0;">
-                        Products
-                    </div>
-                    <div class="buy-card-con">
-                        <div class="layui-row layui-col-space16">
-                            <div class="layui-col-md4">
-                                <div>
-                                    <div class="buy-card-con-item" style="text-align: center;">
-                                        <div style="overflow: hidden;margin-bottom: 20px;">
-                                            <img style="width: 200px;height: 200px;"
-                                                 src="https://shop.certum.eu/media/catalog/product/cache/21baefe592eb5a822d4f94ef4171c625/c/o/code_signing_dla_posiadaczy_karty-open_source-kolor_1.png">
-                                        </div>
-                                        <div style="font-size: 20px;font-weight: 500;text-align: left;">
-                                            <b>开源免费无加密</b>
-                                        </div>
-                                    </div>
-                                    <div style="margin: 20px 0;font-size: 20px;font-weight: bold;color: #00a3e0;">
-                                        €25.00
-                                    </div>
-                                    <div>
-                                        <button type="button" class="layui-btn"
-                                                style="color: white;background: #00a3e0;font-weight: bold;width: 150px;border-radius: 6px;height: 50px;">
-                                            Buy <i class="layui-icon layui-icon-right"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="layui-col-md4">
-                                <div class="buy-card-con-item">
-                                </div>
-                            </div>
-                            <div class="layui-col-md4">
-                                <div class="buy-card-con-item">
-                                </div>
+                    <div class="buy-box" style="padding:0 0 30px 30px">
+                        <div class="buy-title" style="font-weight: bold;font-size: 40px;">
+                            Code signing
+                        </div>
+                        <div class="buy-desc"
+                            style="font-size: 12px;margin-top: 20px;line-height: 25px;color: #A7A5A6;">
+                            Code signing certificate is used for protection of application's code with an electronic
+                            signature.
+                            Because this certificate includes confirmed details used to identify a software producer,
+                            the
+                            software code used for its security ceased being anonymous. Additionally, a positive
+                            verification of
+                            electronic signature ensures the final User that there are no unauthorized changes in the
+                            installed
+                            application.
+                        </div>
+                        <div class="buy-card-title" style="font-weight: bold;font-size: 20px;margin: 20px 0;">
+                            Products
+                        </div>
+                        <div class="buy-card-con">
+                            <div class="layui-row layui-col-space16" id="renderedProducts">
+
                             </div>
                         </div>
+
                     </div>
 
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="layui-container">
-    <div class="layui-row layui-col-space16">
-        <div class="layui-col-md4 foot-about">
-            Let us help you choose
-        </div>
-        <div class="layui-col-md4">
-            <div class="foot-box">
-                <div class="foot-box-head">
-                    <div class="foot-box-img">
-                        <img src="./img/ics1.svg" alt="">
-                    </div>
-                    <div class="foot-box-title">
-                        Buy the Certificate from our Resellers
-                    </div>
-                </div>
-                <div class="foot-box-desc">
-                    Consult one of the 300 authorized Resellers.
-                </div>
-            </div>
-        </div>
-        <div class="layui-col-md4">
-            <div class="foot-box">
-                <div class="foot-box-head">
-                    <div class="foot-box-img">
-                        <img src="./img/phone_orange.svg">
-                    </div>
-                    <div class="foot-box-title">
-                        Ask a Consultant
-                    </div>
-                </div>
-                <div class="foot-box-desc">
-                    Get answers from our Consultants
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div style="background: black;color: white;padding: 60px;">
+
     <div class="layui-container">
         <div class="layui-row layui-col-space16">
+            <div class="layui-col-md4 foot-about">
+                Let us help you choose
+            </div>
             <div class="layui-col-md4">
-                <div class="footer-primary__logo">
-                    <img src="./img/logoft.svg">
+                <div class="foot-box">
+                    <div class="foot-box-head">
+                        <div class="foot-box-img">
+                            <img src="./img/ics1.svg" alt="">
+                        </div>
+                        <div class="foot-box-title">
+                            Buy the Certificate from our Resellers
+                        </div>
+                    </div>
+                    <div class="foot-box-desc">
+                        Consult one of the 300 authorized Resellers.
+                    </div>
                 </div>
             </div>
             <div class="layui-col-md4">
-                <div class="footer-title">
-                    ELECTRONIC SIGNATURE
+                <div class="foot-box">
+                    <div class="foot-box-head">
+                        <div class="foot-box-img">
+                            <img src="./img/phone_orange.svg">
+                        </div>
+                        <div class="foot-box-title">
+                            Ask a Consultant
+                        </div>
+                    </div>
+                    <div class="foot-box-desc">
+                        Get answers from our Consultants
+                    </div>
                 </div>
-                <ul class="footer-primary__links">
-                    <li><a href="https://www.certum.eu/en/qualified-electronic-signature/">Electronic signature</a></li>
-                    <li><a href="https://www.certum.eu/en/electronic-signature-activation/">Electronic signature
-                        activation</a></li>
-                    <li><a href="https://www.certum.eu/en/electronic-signature-renewal/">Electronic Signature
-                        Renewal</a></li>
-                    <li><a href="https://www.certum.eu/en/renewal-process-detailed-instruction/">Electronic Signature
-                        Renewal - detailed instruction</a></li>
-                </ul>
-            </div>
-            <div class="layui-col-md4">
-                <div class="footer-title">
-                    ELECTRONIC SIGNATURE
-                </div>
-                <ul class="footer-primary__links">
-                    <li><a href="https://www.certum.eu/en/certum-by-asseco/">Certum by Asseco</a></li>
-                    <li><a href="https://www.certum.eu/en/news/">News</a></li>
-                    <li><a href="https://www.certum.eu/en/certum-reseller-program/">Reseller Program</a></li>
-                    <li><a href="https://www.certum.eu/en/contact/">Contact</a></li>
-                </ul>
             </div>
         </div>
     </div>
-</div>
-<!-- HTML Content -->
-<script src="https://cdn.bootcdn.net/ajax/libs/layui/2.9.2/layui.min.js"></script>
-<script>
-    var carousel = layui.carousel;
-    // 渲染 - 常规轮播
-    carousel.render({
-        elem: '#ID-carousel-demo-1',
-        width: 'auto',
-        autoplay: false,
-        indicator: 'none',
-        arrow: 'always',
-    });
-</script>
+
+    <div style="background: black;color: white;padding: 60px;">
+        <div class="layui-container">
+            <div class="layui-row layui-col-space16">
+                <div class="layui-col-md4">
+                    <div class="footer-primary__logo">
+                        <img src="./img/logoft.svg">
+                    </div>
+                </div>
+                <div class="layui-col-md4">
+                    <div class="footer-title">
+                        ELECTRONIC SIGNATURE
+                    </div>
+                    <ul class="footer-primary__links">
+                        <li>
+                            <a href="javascript:;">Electronic signature</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">Electronic signature
+                                activation</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">Electronic Signature
+                                Renewal</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">Electronic
+                                Signature
+                                Renewal - detailed instruction</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="layui-col-md4">
+                    <div class="footer-title">
+                        ELECTRONIC SIGNATURE
+                    </div>
+                    <ul class="footer-primary__links">
+                        <li><a href="javascript:;">Certum by Asseco</a></li>
+                        <li><a href="javascript:;">News</a></li>
+                        <li><a href="javascript:;">Reseller Program</a></li>
+                        <li><a href="javascript:;">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- HTML Content -->
+    <script src="./layui/layui.js"></script>
+    <script>
+        var $ = layui.$;
+
+        // 获取 localStorage 中的 'user' 项
+        const userItem = localStorage.getItem('user');
+        // 判断 'user' 项是否不存在
+        if (userItem === null || userItem === undefined) {
+            $('#loginDiv').addClass('layui-hide');
+            $('#noLoginDiv').removeClass('layui-hide');
+            $('#noLoginDiv').addClass('showNav');
+        } else {
+            $('#loginDiv').removeClass('layui-hide');
+            $('#noLoginDiv').addClass('showNav');
+            $('#noLoginDiv').addClass('layui-hide');
+            $('#username').html(userItem);
+        }
+
+        function getQueryVariable(variable) {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                if (pair[0] == variable) { return pair[1]; }
+            }
+            return (false);
+        }
+
+        $.ajax({
+            url: "http://ce.zjies.com/api/cmdb/cert/enum/",
+            success: function (res) {
+                if (res.code === 200) {
+                    const categorizedProducts = res.data.product.reduce((acc, product) => {
+                        const category = product.category.toString();
+
+                        if (!acc[category]) {
+                            acc[category] = [];
+                        }
+
+                        acc[category].push({
+                            productName: product.productName,
+                            product: product.product,
+                            isNeedUSB: product.isNeedUSB,
+                            defaultPrice: product.defaultPrice,
+                            pictures: product.pictures,
+                            category: product.category,
+                        });
+
+                        return acc;
+                    }, {});
+
+                    // 渲染到 HTML
+                    const div1 = document.getElementById("renderedKeys");
+                    Object.keys(categorizedProducts).forEach(key => {
+                        const httml1 = `<a href='./product.html?id=${key}'><div class='category-container'><p>${key}</p></div></a>`
+                        // 将产品信息添加到已存在的 <div>
+                        div1.innerHTML += httml1;
+                    });
+
+                    const specificCategoryKey = !getQueryVariable('id') ? Object.keys(categorizedProducts)[0] : getQueryVariable('id');
+                    const specificCategoryValue = categorizedProducts[decodeURI(specificCategoryKey)];
+                    const productsContainer = document.getElementById("renderedProducts");
+
+                    // 循环特定类别的值
+                    specificCategoryValue.forEach(product => {
+                        const imageUrl = `http://139.224.8.116:8769/media/img/${product.pictures || 'default-image-url'}`;
+
+
+                        // 创建产品信息的 HTML 结构
+                        const productHtml = `
+        <div class="layui-col-md4">
+            <div>
+                <a style="text-align: center;" href='./detail.html?category=${product.category}&name=${product.product}&u=${product.isNeedUSB}'>
+                    <div class="buy-card-con-item" style="text-align: center;">
+                    <div style="overflow: hidden;margin-bottom: 20px;">
+                        <img style="width: 200px;height: 200px;" src="${imageUrl}">
+                    </div>
+                    <div style="font-size: 20px;font-weight: 500;text-align: center;height: 60px;">
+                        <b>${product.productName}</b>
+                    </div>
+                    </div>
+                    <div style="margin: 20px 0;font-size: 20px;font-weight: bold;color: #00a3e0;">
+                        €${product.defaultPrice.toFixed(2)}
+                    </div>
+                    <div>
+                        <button type="button" class="layui-btn" style="color: white;background: #00a3e0;font-weight: bold;width: 150px;border-radius: 6px;height: 50px;">
+                            Buy <i class="layui-icon layui-icon-right"></i>
+                        </button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    `;
+                        // 将产品信息添加到已存在的 <div>
+                        productsContainer.innerHTML += productHtml;
+                    });
+
+                }
+            }
+        })
+
+    </script>
 </body>
+
 </html>

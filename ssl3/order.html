@@ -113,81 +113,22 @@
 
 
     <div class="layui-container" style="padding: 100px 0;">
-        <div class="layui-row">
-            <div class="layui-col-md6">
-                <div class="layui-carousel" id="ID-carousel-demo-1">
-                    <div carousel-item>
-                        <div>条目1</div>
-                        <div>条目2</div>
-                        <div>条目3</div>
-                        <div>条目4</div>
-                        <div>条目5</div>
-                    </div>
-                </div>
-            </div>
-            <div class="layui-col-md6 layui-form">
-                <div style="padding-left: 50px;">
-                    <div style="font-weight: bold;font-size: 30px;margin-bottom: 40px;">
-                        EV Code Signing in the Cloud
-                    </div>
-                    <div style="font-size: 13px;margin-bottom: 40px;">
-                        Are you a software publisher, programmer or a developer who creates a code? Are you making your
-                        programs available for download online? Secure your codes, programs and applications with the EV
-                        Code Signing Certificate in the cloud!
-                    </div>
-                    <div style="display: flex;align-items: center;">
-                        <div style="margin-right: 40px;">validity：</div>
-                        <select lay-filter="demo-select-filter">
-                            <option value="">Choose an Option...</option>
-                            <option value="1">1 年</option>
-                            <option value="2">1 年</option>
-                            <option value="3">3 年</option>
-                        </select>
-                    </div>
-                    <div id="rightTotal" style="color: #16baaa;font-size: 20px;font-weight: bold;margin: 30px 0;">11
-                    </div>
-                    <button style="width: 200px;" type="button" class="layui-btn" id="buy">buy</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="layui-container">
-        <div class="layui-row layui-col-space16">
-            <div class="layui-col-md4 foot-about">
-                Let us help you choose
-            </div>
-            <div class="layui-col-md4">
-                <div class="foot-box">
-                    <div class="foot-box-head">
-                        <div class="foot-box-img">
-                            <img src="./img/ics1.svg" alt="">
-                        </div>
-                        <div class="foot-box-title">
-                            Buy the Certificate from our Resellers
-                        </div>
-                    </div>
-                    <div class="foot-box-desc">
-                        Consult one of the 300 authorized Resellers.
-                    </div>
-                </div>
-            </div>
-            <div class="layui-col-md4">
-                <div class="foot-box">
-                    <div class="foot-box-head">
-                        <div class="foot-box-img">
-                            <img src="./img/phone_orange.svg">
-                        </div>
-                        <div class="foot-box-title">
-                            Ask a Consultant
-                        </div>
-                    </div>
-                    <div class="foot-box-desc">
-                        Get answers from our Consultants
-                    </div>
-                </div>
-            </div>
-        </div>
+        <table class="layui-table" lay-even>
+            <colgroup>
+                <col width="150">
+                <col width="150">
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>产品</th>
+                    <th>年限</th>
+                    <th>订单状态</th>
+                </tr>
+            </thead>
+            <tbody id="tableBodyId"></tbody>
+        </table>
     </div>
 
     <div style="background: black;color: white;padding: 60px;">
@@ -236,54 +177,10 @@
         </div>
     </div>
     <!-- HTML Content -->
-
-    <input type="hidden" name="" id="hidden_age">
     <script src="./layui/layui.js"></script>
+
     <script>
         var $ = layui.$;
-        var form = layui.form;
-        var layer = layui.layer;
-
-        $("#buy").click(function () {
-            let htmlContent = $('#rightTotal').html();
-            // 移除 "元" 字符串
-            htmlContent = htmlContent.replace(' 元', '');
-            if (!htmlContent || `${htmlContent.trim()}` === '0') {
-                layer.msg('请重新选择商品后进行购买')
-                return;
-            }
-
-            const user = localStorage.getItem('user');
-
-            if (user === null || user === undefined) {
-                layer.msg('请登录')
-                return;
-            }
-
-            const name = decodeURI(getQueryVariable('key'))
-            $.ajax({
-                url: "http://ce.zjies.com/api/cmdb/cert/order/payment/",
-                type: "POST",
-                data: JSON.stringify({
-                    "userName": localStorage.getItem('user'),
-                    "price": parseInt(htmlContent),
-                    "userLoginType": localStorage.getItem('type'),
-                    "brand": "certum",
-                    "type": 0,
-                    "product": name,
-                    "isGlobbing": false,
-                    "age": $('#hidden_age').val(),
-                    "CSR": "",
-                    "verify": "",
-                    "sslDomains": ""
-                }),
-                success: function (res) {
-                    if (res.code === 200) {
-                        open(res.data.alipay_url)
-                    }
-                }
-            })
-        });
 
         // 获取 localStorage 中的 'user' 项
         const userItem = localStorage.getItem('user');
@@ -299,48 +196,41 @@
             $('#username').html(userItem);
         }
 
-        form.on('select(demo-select-filter)', function (data) {
-            var value = data.value;
-            $('#hidden_age').val(value)
-            getPrice(value)
-        });
+        $.ajax({
+            url: `http://ce.zjies.com/api/cmdb/cert/order/operation?userLoginType=${localStorage.getItem('type')}&userName=${localStorage.getItem('user')}`,
+            success: function (res) {
+                if (res.code === 200) {
+                    // 模拟接口返回的数据
+                    const responseData = res.data.results;
+                    const tbody = document.querySelector('.table-striped tbody');
 
-        function getQueryVariable(variable) {
-            var query = window.location.search.substring(1);
-            var vars = query.split("&");
-            for (var i = 0; i < vars.length; i++) {
-                var pair = vars[i].split("=");
-                if (pair[0] == variable) { return pair[1]; }
-            }
-            return (false);
-        }
-
-        getPrice(1)
-        $('#hidden_age').val(1)
-
-        function getPrice(age) {
-            const cate = decodeURI(getQueryVariable('category'))
-
-            const name = decodeURI(getQueryVariable('name'))
-            const usb = decodeURI(getQueryVariable('u'))
-            const usbNum = usb === false || usb === "false" ? 0 : 1;
-            $.ajax({
-                url: `http://ce.zjies.com/api/cmdb/cert/getPrice?product=${name}&age=${age}&isNeedUSB=${usbNum}&category=${cate}`,
-                success: function (res) {
-                    if (res.code === 200) {
-                        if (res.data.price) {
-                            $('#rightTotal').html(res.data.price + ' 元')
-                        } else {
-                            $('#rightTotal').html(0 + ' 元')
-                        }
+                    // 订单状态:0=未支付,1=已支付
+                    const statusTextMap = {
+                        0: '待支付',
+                        1: '已支付'
                     }
-                },
-                error: function (res) {
-                    layer.msg(res.responseJSON.errors);
+
+                    // 获取包含表格的已存在的 <tbody>
+                    const tableBody = document.getElementById("tableBodyId");
+
+                    // 循环特定类别的值
+                    responseData.forEach((data, index) => {
+                        const status = data.status
+                        const statusText = statusTextMap[status] || '未知状态'
+
+                        const productHtml = `<tr>
+            <td>${index + 1}</td>
+            <td>${data.product}</td>
+            <td>${data.age} 年</td>
+            <td>${statusText}</td>
+        </tr> `;
+                        tableBody.innerHTML += productHtml;
+                    });
                 }
-            })
-        }
+            }
+        });
     </script>
+
 </body>
 
 </html>

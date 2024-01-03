@@ -8,6 +8,25 @@
     <link href="./layui/css/layui.css" rel="stylesheet">
     <link href="./index.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+
+    <style>
+        .demo-login-container {
+            width: 320px;
+            margin: 21px auto 0;
+        }
+
+        .demo-login-other .layui-icon {
+            position: relative;
+            display: inline-block;
+            margin: 0 2px;
+            top: 2px;
+            font-size: 26px;
+        }
+
+        a:not(.layui-btn) {
+            color: #01aaed
+        }
+    </style>
 </head>
 
 <body>
@@ -82,112 +101,68 @@
                 </a></li>
             <li class="layui-nav-item"><a href="">
                     <h2>Dedicated Solutions</h2>
-                </a>
-            </li>
+                </a></li>
             <li class="layui-nav-item"><a href="">
                     <h2>Partner Reseller Program</h2>
-                </a>
-            </li>
-            <li class="layui-nav-item layui-hide" id="loginDiv">
-                <a href="javascript:;">
-                    <h2 id="username"></h2>
-                </a>
-                <dl class="layui-nav-child">
-                    <dd><a href="">
-                            <h2>Order List</h2>
-                        </a>
-                    </dd>
-                </dl>
-            </li>
-            <li class="layui-nav-item layui-hide" id="noLoginDiv">
-                <a href="./register.html">
-                    <h2>Sign in</h2>
-                </a>
-                <dl class="layui-nav-child">
-                    <dd><a href="./register.html">Sign in</a></dd>
-                    <dd><a href="./login.html"> Sign up</a></dd>
-                </dl>
-            </li>
+                </a></li>
+            <li class="layui-nav-item"><a href="">
+                    <h2>About us</h2>
+                </a></li>
+            <li class="layui-nav-item"><a href="">
+                    <h2>Contact</h2>
+                </a></li>
         </ul>
     </div>
 
-
     <div class="layui-container" style="padding: 100px 0;">
-        <div class="layui-row">
-            <div class="layui-col-md6">
-                <div class="layui-carousel" id="ID-carousel-demo-1">
-                    <div carousel-item>
-                        <div>条目1</div>
-                        <div>条目2</div>
-                        <div>条目3</div>
-                        <div>条目4</div>
-                        <div>条目5</div>
-                    </div>
-                </div>
-            </div>
-            <div class="layui-col-md6 layui-form">
-                <div style="padding-left: 50px;">
-                    <div style="font-weight: bold;font-size: 30px;margin-bottom: 40px;">
-                        EV Code Signing in the Cloud
-                    </div>
-                    <div style="font-size: 13px;margin-bottom: 40px;">
-                        Are you a software publisher, programmer or a developer who creates a code? Are you making your
-                        programs available for download online? Secure your codes, programs and applications with the EV
-                        Code Signing Certificate in the cloud!
-                    </div>
-                    <div style="display: flex;align-items: center;">
-                        <div style="margin-right: 40px;">validity：</div>
-                        <select lay-filter="demo-select-filter">
-                            <option value="">Choose an Option...</option>
-                            <option value="1">1 年</option>
-                            <option value="2">1 年</option>
-                            <option value="3">3 年</option>
-                        </select>
-                    </div>
-                    <div id="rightTotal" style="color: #16baaa;font-size: 20px;font-weight: bold;margin: 30px 0;">11
-                    </div>
-                    <button style="width: 200px;" type="button" class="layui-btn" id="buy">buy</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="layui-container">
-        <div class="layui-row layui-col-space16">
-            <div class="layui-col-md4 foot-about">
-                Let us help you choose
-            </div>
-            <div class="layui-col-md4">
-                <div class="foot-box">
-                    <div class="foot-box-head">
-                        <div class="foot-box-img">
-                            <img src="./img/ics1.svg" alt="">
+        <form class="layui-form">
+            <div class="demo-login-container">
+                <div
+                    style="height: 50px;line-height: 50px;margin-bottom: 20px;font-weight: bold;font-size: 30px;text-align: center;">
+                    邮箱登录
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-wrap">
+                        <div class="layui-input-prefix">
+                            <i class="layui-icon layui-icon-email"></i>
                         </div>
-                        <div class="foot-box-title">
-                            Buy the Certificate from our Resellers
-                        </div>
+                        <input type="text" name="email" value="" lay-verify="required" placeholder="请填写邮箱"
+                            lay-reqtext="请填写邮箱" autocomplete="off" class="layui-input" lay-affix="clear">
                     </div>
-                    <div class="foot-box-desc">
-                        Consult one of the 300 authorized Resellers.
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-wrap">
+                        <div class="layui-input-prefix">
+                            <i class="layui-icon layui-icon-password"></i>
+                        </div>
+                        <input type="password" name="password" value="" lay-verify="required" placeholder="密   码"
+                            lay-reqtext="请填写密码" autocomplete="off" class="layui-input" lay-affix="eye">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <input type="checkbox" name="remember" lay-skin="primary" title="记住密码">
+                </div>
+                <div class="layui-form-item">
+                    <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="demo-login">登录</button>
+                </div>
+                <div style="display: flex;justify-content: space-between;">
+                    <div>
+                        <label>其它登录方式</label>
+                        <span style="padding: 0 21px 0 6px;">
+                            <a href="./login.html">
+                                <i class="layui-icon layui-icon-cellphone"
+                                    style="background: #efefef; color: black;border-radius: 50%;padding: 6px;"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div>
+                        或 <a href="./register.html">注册帐号</a>
                     </div>
                 </div>
             </div>
-            <div class="layui-col-md4">
-                <div class="foot-box">
-                    <div class="foot-box-head">
-                        <div class="foot-box-img">
-                            <img src="./img/phone_orange.svg">
-                        </div>
-                        <div class="foot-box-title">
-                            Ask a Consultant
-                        </div>
-                    </div>
-                    <div class="foot-box-desc">
-                        Get answers from our Consultants
-                    </div>
-                </div>
-            </div>
-        </div>
+        </form>
+
     </div>
 
     <div style="background: black;color: white;padding: 60px;">
@@ -236,110 +211,37 @@
         </div>
     </div>
     <!-- HTML Content -->
-
-    <input type="hidden" name="" id="hidden_age">
     <script src="./layui/layui.js"></script>
     <script>
-        var $ = layui.$;
-        var form = layui.form;
-        var layer = layui.layer;
+        layui.use(function () {
+            var form = layui.form;
+            var layer = layui.layer;
+            var $ = layui.$;
 
-        $("#buy").click(function () {
-            let htmlContent = $('#rightTotal').html();
-            // 移除 "元" 字符串
-            htmlContent = htmlContent.replace(' 元', '');
-            if (!htmlContent || `${htmlContent.trim()}` === '0') {
-                layer.msg('请重新选择商品后进行购买')
-                return;
-            }
-
-            const user = localStorage.getItem('user');
-
-            if (user === null || user === undefined) {
-                layer.msg('请登录')
-                return;
-            }
-
-            const name = decodeURI(getQueryVariable('key'))
-            $.ajax({
-                url: "http://ce.zjies.com/api/cmdb/cert/order/payment/",
-                type: "POST",
-                data: JSON.stringify({
-                    "userName": localStorage.getItem('user'),
-                    "price": parseInt(htmlContent),
-                    "userLoginType": localStorage.getItem('type'),
-                    "brand": "certum",
-                    "type": 0,
-                    "product": name,
-                    "isGlobbing": false,
-                    "age": $('#hidden_age').val(),
-                    "CSR": "",
-                    "verify": "",
-                    "sslDomains": ""
-                }),
-                success: function (res) {
-                    if (res.code === 200) {
-                        open(res.data.alipay_url)
-                    }
-                }
-            })
-        });
-
-        // 获取 localStorage 中的 'user' 项
-        const userItem = localStorage.getItem('user');
-        // 判断 'user' 项是否不存在
-        if (userItem === null || userItem === undefined) {
-            $('#loginDiv').addClass('layui-hide');
-            $('#noLoginDiv').removeClass('layui-hide');
-            $('#noLoginDiv').addClass('showNav');
-        } else {
-            $('#loginDiv').removeClass('layui-hide');
-            $('#noLoginDiv').addClass('showNav');
-            $('#noLoginDiv').addClass('layui-hide');
-            $('#username').html(userItem);
-        }
-
-        form.on('select(demo-select-filter)', function (data) {
-            var value = data.value;
-            $('#hidden_age').val(value)
-            getPrice(value)
-        });
-
-        function getQueryVariable(variable) {
-            var query = window.location.search.substring(1);
-            var vars = query.split("&");
-            for (var i = 0; i < vars.length; i++) {
-                var pair = vars[i].split("=");
-                if (pair[0] == variable) { return pair[1]; }
-            }
-            return (false);
-        }
-
-        getPrice(1)
-        $('#hidden_age').val(1)
-
-        function getPrice(age) {
-            const cate = decodeURI(getQueryVariable('category'))
-
-            const name = decodeURI(getQueryVariable('name'))
-            const usb = decodeURI(getQueryVariable('u'))
-            const usbNum = usb === false || usb === "false" ? 0 : 1;
-            $.ajax({
-                url: `http://ce.zjies.com/api/cmdb/cert/getPrice?product=${name}&age=${age}&isNeedUSB=${usbNum}&category=${cate}`,
-                success: function (res) {
-                    if (res.code === 200) {
-                        if (res.data.price) {
-                            $('#rightTotal').html(res.data.price + ' 元')
+            // 提交事件
+            form.on('submit(demo-login)', function (data) {
+                var field = data.field; // 获取表单字段值
+                // 此处可执行 Ajax 等操作
+                $.ajax({
+                    url: "http://ce.zjies.com/api/cmdb/cert/login/",
+                    type: 'POST',
+                    data: JSON.stringify(field),
+                    success: function (res) {
+                        if (res.code === 200) {
+                            localStorage.setItem('user', res.data.userInfo.email);
+                            localStorage.setItem('type', res.data.userInfo.userLoginType);
+                            window.location.href = "./index.html";
                         } else {
-                            $('#rightTotal').html(0 + ' 元')
+                            layer.msg(res.errors);
                         }
+                    },
+                    error: function (res) {
+                        layer.msg(res.responseJSON.errors);
                     }
-                },
-                error: function (res) {
-                    layer.msg(res.responseJSON.errors);
-                }
-            })
-        }
+                });
+                return false; // 阻止默认 form 跳转
+            });
+        });
     </script>
 </body>
 
