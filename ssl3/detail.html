@@ -260,7 +260,8 @@
                 return;
             }
 
-            const name = decodeURI(getQueryVariable('key'))
+            const name = decodeURI(getQueryVariable('name'))
+
             $.ajax({
                 url: "http://ce.zjies.com/api/cmdb/cert/order/payment/",
                 type: "POST",
